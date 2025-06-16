@@ -932,8 +932,6 @@ footer p{
     -o-border-radius: 30px 30px 30px 30px ;
 }
 
-
-
 .articles article{
     transition-duration: 0.3s;
     border:  4px solid rgb(233, 233, 233);
@@ -944,9 +942,6 @@ footer p{
     -o-border-radius: 20px 20px 20px 20px ;
 }
 
-
-
-
 #ventanaGrande{
     position: fixed;
     background-color: white;
@@ -954,7 +949,6 @@ footer p{
     width: 70%;
     height: 60%;
 }
-
 
 ::-webkit-scrollbar{
     width: 1.2em;
@@ -1029,8 +1023,6 @@ footer p{
     z-index: 1;
 }
 
-
-
 .modal-container{
     display: flex;
     background-color: rgba(0,0,0, 0.3);
@@ -1057,7 +1049,6 @@ footer p{
 	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
-
 
 .modal{
 
@@ -1683,12 +1674,6 @@ footer p{
 
 
 
-
-
-
-
-
-
 /******************************/
 /*     Medias Querys          */
 /******************************/
@@ -1993,6 +1978,87 @@ footer p{
         
     }
     
+    .formaIzquierda{
+        top: 20px;
+        height: 800px;
+        width: 450px;
+
+    }
+
+    .containerNav{
+        margin-left: 0px;
+        top: 210px;
+        left: 20px;
+        text-align:center;
+    }
+    .containerNav a{
+
+        align-items: center;
+        margin-top: 0px;
+        width: 54px;
+        transition-duration: 0.5s;
+    }
+
+    .elementos{
+        align-items: center;
+        align-content: center;
+    }
+
+    .elementos  a{
+        align-items: center;
+    }
+    .elementos  a > svg{ 
+        align-items: center;
+        margin-left: 10px;
+        width: 54px;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 60px;
+        align-items: center;
+        
+    }
+    .elementos a:hover svg{
+        width: 60px;
+        box-shadow: none;
+        align-items: center;
+        top: 50px;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+
+    }
+    
+    .elementos a:focus-within svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        margin-left: -50px;
+        margin-top: -80px;
+        text-align: center;
+        left: auto; 
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+    }
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
+    
 }
 
 
@@ -2139,6 +2205,89 @@ footer p{
     padding-top: 0;
 }
 
+    
+    .formaIzquierda{
+        top: 20px;
+        height: 800px;
+        width: 400px;
+
+    }
+
+    .containerNav{
+        margin-left: 0px;
+        top: 210px;
+        left: 20px;
+        text-align:center;
+    }
+    .containerNav a{
+
+        align-items: center;
+        margin-top: 0px;
+        width: 50px;
+        transition-duration: 0.5s;
+    }
+
+    .elementos{
+        align-items: center;
+        align-content: center;
+    }
+
+    .elementos  a{
+        align-items: center;
+    }
+    .elementos  a > svg{ 
+        align-items: center;
+        margin-left: 0px;
+        width: 50px;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 54px;
+        align-items: center;
+        
+    }
+    .elementos a:hover svg{
+        width: 54px;
+        box-shadow: none;
+        align-items: center;
+        top: 50px;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+
+    }
+    
+    .elementos a:focus-within svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        margin-left: -50px;
+        margin-top: -80px;
+        text-align: center;
+        left: auto; 
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+        font-size: 12px;
+       
+    }
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
 
 }
 
@@ -2244,63 +2393,252 @@ footer p{
     }
 
     
-.social-icons li a {
-    position: relative;
-    display: block;
-    display: grid;
-    place-items: center;
-    background: #ffffff;
-    font-size: 13px;
-    font-weight: bold;
-    width: 1.8rem;
-    height: 1.8rem;
-    border: 1px solid #CDCDCD;
-    border-radius: 0.5rem;
-    transition: .2s;
-    transform: translateY(2rem);
-    opacity: 0;
-    text-decoration: none;
-    color: rgb(31, 68, 133);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
-}
+    .social-icons li a {
+        position: relative;
+        display: block;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid #CDCDCD;
+        border-radius: 0.5rem;
+        transition: .2s;
+        transform: translateY(2rem);
+        opacity: 0;
+        text-decoration: none;
+        color: rgb(31, 68, 133);
+        -webkit-transform: translateY(2rem);
+        -moz-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+        -o-transform: translateY(2rem);
+    }
 
-#herramientas{
-    margin-right: -20px;
-}
+    #herramientas{
+        margin-right: -20px;
+    }
 
-.card-front,
-  .card-back {
-    padding: 1rem;
-  }
+    .card-front,
+    .card-back {
+        padding: 1rem;
+    }
 
-#tarjeta1{
-    margin-left: 13%;
-    margin-right: 5%;
-}
-#tarjeta2{
-    margin-left: 13%;
-    margin-right: 5%;
-}
+    #tarjeta1{
+        margin-left: 13%;
+        margin-right: 5%;
+    }
+    #tarjeta2{
+        margin-left: 13%;
+        margin-right: 5%;
+    }
 
-#contenedorSeccionesCCI{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    height: auto;
-    margin-bottom: 100px;
-    color: var(--primary-color-Letras);
+    #contenedorSeccionesCCI{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 100px;
+        color: var(--primary-color-Letras);
 
+        
+    }
     
+    .formaIzquierda{
+        top: 20px;
+        height: 860px;
+        width: 380px;
+
+    }
+
+    .containerNav{
+        margin-left: 0px;
+        top: 230px;
+        left: 11px;
+        text-align:center;
+    }
+    .containerNav a{
+
+        align-items: center;
+        margin-top: 0px;
+        width: 50px;
+        transition-duration: 0.5s;
+    }
+
+    .elementos{
+        align-items: center;
+        align-content: center;
+    }
+
+    .elementos  a{
+        align-items: center;
+        text-decoration: none;
+    }
+    .elementos  a > svg{ 
+        align-items: center;
+        margin-left: 0px;
+        width: 50px;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 54px;
+        align-items: center;
+        
+    }
+    .elementos a:hover svg{
+        width: 54px;
+        box-shadow: none;
+        align-items: center;
+        top: 50px;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+
+    }
+    
+    .elementos a:focus-within svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        margin-left: -50px;
+        margin-top: -80px;
+        text-align: center;
+        left: auto; 
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+        font-size: 12px;
+       
+    }
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
 }
+
+@media (max-width:700px) and (max-height: 800px){
+    .home-content{
+        width: 100%;
+        max-width: auto;
+        margin-right: 15%;
+        padding-right: 0;
+        margin-top: 250px;
+    }
+    .seccionesNav{
+    
+        width: 83%;
+        top: 1300px;
+        margin-top: 100px;
+        left: 0px;
+        display: block;
+        text-align: center;
+        z-index: 5;
+  
+    }
+
+    .formaIzquierda{
+        top: 20px;
+        height: 860px;
+        width: 380px;
+
+    }
+
+    .containerNav{
+        margin-left: 0px;
+        top: 230px;
+        left: 11px;
+        text-align:center;
+    }
+    .containerNav a{
+
+        align-items: center;
+        margin-top: 0px;
+        width: 50px;
+        transition-duration: 0.5s;
+    }
+
+    .elementos{
+        align-items: center;
+        align-content: center;
+    }
+
+    .elementos  a{
+        align-items: center;
+        text-decoration: none;
+    }
+    .elementos  a > svg{ 
+        align-items: center;
+        margin-left: 0px;
+        width: 50px;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 54px;
+        align-items: center;
+        
+    }
+    .elementos a:hover svg{
+        width: 54px;
+        box-shadow: none;
+        align-items: center;
+        top: 50px;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+
+    }
+    
+    .elementos a:focus-within svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        margin-left: -50px;
+        margin-top: -80px;
+        text-align: center;
+        left: auto; 
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+        font-size: 12px;
+       
+    }
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
     
 }
 
 /*Barra navegación Movil*/
-@media (max-width: 650px) {
+@media (max-width: 650px) and (max-height: 800px) {
     .home{
         margin-top: 250px;
         width: 100%;
@@ -2404,32 +2742,36 @@ footer p{
     .containerNav{
         position: fixed;
         align-items: flex-end;
-        bottom: -60px;
-        height: 200px;
-        top: 85%;
-        left: 20px;
+        top: 78%;
+        height: 250px;
         width: 85%;
         display: flex;
         z-index: 10001;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 30px;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
+        z-index: 100001;
     }
 
     .containerNav a{
-
+        display: absolute;
+        margin: 1%;
+        color: var(--primary-color-IconosNav);
+        font-weight: bolder;
+        transition-duration: 0.5s;
         align-items: center;
-        margin-top: 0;
+        text-align: center;
+        margin-top: 0px;
         margin-bottom: 50px;
-        width: 70px;
+        width: 65px;
         transition-duration: 0.5s;
     }
 
 
     .formaIzquierda{
         display: hidden;
-        
         opacity: 0;
     }
 
@@ -2437,72 +2779,53 @@ footer p{
         display: block;
         position: fixed;
         width: 100%;
-        height:75px;
+        height:120px;
         background-color: var(--primary-color-FiguraIzquierda);
-        bottom: 0px;
+        bottom: 20px;
         left: 0px;
-        z-index: 1000;
+        z-index: 100000;
         
     }
 
     #footer{
-        background: none;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        display: block;
+        background-color: #000c22;
+        
+        position: fixed;
         color: var(--primary-color-Letras);
-        height: 200px;
-        width: 20px;
-        top: 35%;
-        left: 20px;
+        bottom: 0px;
+        left: 0px;
         align-items: center;
         text-align: center;
-        -webkit-writing-mode: sideways-lr;
-        -ms-writing-mode: sideways-lr;
-    }
-
-
-    .containerNav a{
-        display: absolute;
-        padding:1%;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        transition-duration: 0.5s;
+        z-index: 100000;
     }
 
     .elementos{
         transition-duration: 0.5s;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
 
     .elementos a > span{
         transition-duration: 0.5s;
         position: relative;
-        top: 20px;
-        left: 0px;
-        margin-top: -10px;
+        
         margin-left: 0px;
         opacity: 0;
         transition-duration: 0.5s;
         color: black; 
     }
-
-    .elementos a:hover > span{
-        position: relative;
-        top: -30px;
-        left: 0px; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-
 
     .elementos a svg{
         width: 100%;
@@ -2520,28 +2843,31 @@ footer p{
 
     .elementos a:hover{
         transition-duration: 0.5s;
-        width: 90px;
+        width: 95px;
+        text-decoration: none;
+        margin-bottom: 40px;
         
     }
     .elementos a:hover svg{
-        width: 100%;
-        height: 100%;
+        width: 75%;
+        height: 75%;
         box-shadow: none;
-        top: 50px;
         transition-duration: 0.5s;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        margin-bottom: 20px;
-    }
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+        background-color: rgb(204, 207, 237);
+        padding: 5%;
+}
 
     .elementos a:focus-within svg{
-        width: 100%;
-        height: 90%;
+        width: 75%;
+        height: 75%;
         transition-duration: 0.5s;
     }
+    
 
     #tarjeta1{
         margin-left: 0%;
@@ -2573,15 +2899,14 @@ footer p{
         z-index: 5;
         
       }
+      
     
     .containerH3 .text{
         
         font-size: 27px;
         font-weight: 700;
         color: #00abf0;
-       
-       
-        top: 270px;
+        top: 0px;
         height: auto;
         width: auto;
     }
@@ -2802,8 +3127,6 @@ footer p{
 }
     
 }
-
-
 
 @media (max-width: 520px) {
     .home{
@@ -3046,7 +3369,6 @@ footer p{
 
 }
 
-
 @media (max-width: 430px){
     .container {
         position: absolute;
@@ -3177,77 +3499,6 @@ footer p{
 
 
 
-@media (max-height: 800px){
-    .home-content{
-        width: 100%;
-        max-width: auto;
-        margin-right: 15%;
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 250px;
-    }
-
-    .containerNav a{
-
-        align-items: center;
-        margin-top: 0;
-        margin-bottom: 50px;
-        width: 50px;
-        transition-duration: 0.5s;
-    }
-
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 60px;
-        
-    }
-    .elementos a:hover svg{
-        width: 100%;
-        height: 100%;
-        box-shadow: none;
-        top: 40px;
-        transition-duration: 0.5s;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        margin-bottom: 5px;
-    }
-    
-    .elementos a:focus-within svg{
-        width: 100%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        top: -10px;
-        left: -10px;
-        margin-top: -10px;
-
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-    
-    .elementos a:hover > span{
-        position: relative;
-        top: 10px;
-        left: -10px; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-    
-}
-
 @media (max-height: 700px){
     
 .containerNav a{
@@ -3275,6 +3526,17 @@ footer p{
     top: 8rem;
     right: 0;
 } 
+
+    .seccionesNav{
+    
+    width: 83%;
+    top: 1600px;
+    margin-top: 150px;
+    display: block;
+    text-align: center;
+    z-index: 5;
+  
+    }
 
 }
 
@@ -3332,6 +3594,17 @@ footer p{
         position: absolute;
         top: 6rem;
         right: 0;
+    }
+
+    .seccionesNav{
+    
+    width: 83%;
+    top: 2000px;
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+    z-index: 5;
+  
     }
 }
 
