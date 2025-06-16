@@ -3732,7 +3732,7 @@ footer p{
 
      .container {
         position: absolute;
-        top: 7rem;
+        top: 6rem;
         right: 0;
         left: 3%;
     } 
@@ -3760,12 +3760,12 @@ footer p{
 
     .seccionesNav{
     
-    width: 83%;
-    top: 1500px;
-    margin-top: 150px;
-    display: block;
-    text-align: center;
-    z-index: 5;
+        width: 83%;
+        top: 1500px;
+        margin-top: 150px;
+        display: block;
+        text-align: center;
+        z-index: 5;
   
     }
 

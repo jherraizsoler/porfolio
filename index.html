@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <div id="bar"></div>
     <header class="header">
         <div id="logo" class="container">
@@ -111,7 +110,7 @@
     <!-- MENU NAVEGACIÓN Ventana grande-->
     <formaIzquierda class="formaIzquierda 77tilt-in-left-1">
     </formaIzquierda>
-    <nav class="containerNav tilt-in-left-1">
+    <nav class="containerNav">
         <!-- Academico -->
         <div class="elementos">
             <a href="#contenedorSeccionesAcademicas">
@@ -213,16 +212,17 @@
 
 
     <!-- MENU NAVEGACIÓN MOVIL-->
-    <formaMovil class="formaMovil slide-in-bck-bottom"></formaMovil>
+    <formaMovil class="formaMovil"></formaMovil>
 
+    <formaDerecha class="formaDerecha"></formaDerecha>
 
-    <section class="home fade-in-bottom">
+    <section class="home slide-in-elliptic-right-fwd">
         
         <div class="global-section-Home">
             <div class="home-content">
                 <div class="containerTextH1">
                     <div>
-                        <h1 id="textH1">Hello  
+                        <h1 class="dark" id="textH1">Hello  
                             <div class="listaTextH1">
                                 <div class="itemTextH1">
                                      world !
@@ -879,7 +879,7 @@
                     </div>
                 </article>
             </div>
-
+            <div class="separador"></div>
             
         </div>
         
@@ -893,7 +893,7 @@
     <div class="light"></div>
 
 
-    <script type="text/javascript">
+     <script type="text/javascript">
         var pos = document.documentElement;
         pos.addEventListener('mousemove', e =>
         {
@@ -909,7 +909,7 @@
         const updateProgress = () =>
         {
             let scrollPos =
-                (window.scrollY / (body.scrollHeight + window.innerHeight)) * 130;
+                (window.scrollY / (body.scrollHeight + window.innerHeight)) * 100;
             console.log(scrollPos)
             progressBar.style.width = `${scrollPos}%`;
             requestAnimationFrame(updateProgress);
@@ -940,5 +940,4 @@
     <!-- Ventanas emergentes PopUps-->
     <script src="app.js"></script>
 </body>
-
 </html>
