@@ -683,7 +683,7 @@ footer p{
     display: block;
     left:-200px;
     top: 12%;
-    height: 720px;
+    height: 820px;
     width: 400px;
     backdrop-filter: blur(10px);
     background-color: var(--primary-color-FiguraIzquierda);
@@ -1671,7 +1671,9 @@ footer p{
 }
 
 
-
+.separador{
+    margin-bottom: 250px;
+}
 
 
 /******************************/
@@ -1710,6 +1712,22 @@ footer p{
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
+    }
+    .formaIzquierda{
+        position: fixed;
+        display: block;
+        left:-200px;
+        top: 8%;
+        height: 760px;
+        width: 400px;
+        backdrop-filter: blur(10px);
+        background-color: var(--primary-color-FiguraIzquierda);
+    
+        border: 5px solid rgb(255, 255, 255);
+        clip-path: polygon(40% 2%, 72% 28%, 72% 70%, 40% 94%);
+        z-index: 100;
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
     }
     .profile-name{
         padding: 4.5rem 3rem;
@@ -1761,6 +1779,22 @@ footer p{
         right: 0;
         left: 38%;
     } 
+    .formaIzquierda{
+    position: fixed;
+    display: block;
+    left:-200px;
+    top: 8%;
+    height: 760px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    background-color: var(--primary-color-FiguraIzquierda);
+   
+    border: 5px solid rgb(255, 255, 255);
+    clip-path: polygon(40% 2%, 72% 28%, 72% 70%, 40% 94%);
+    z-index: 100;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    }
 
         
     .profile {
@@ -1831,29 +1865,29 @@ footer p{
         bottom: 4rem; 
     }
 
-    
-.social-icons li a {
-    position: relative;
-    display: block;
-    display: grid;
-    place-items: center;
-    background: #ffffff;
-    font-size: 13px;
-    font-weight: bold;
-    width: 1.8rem;
-    height: 1.8rem;
-    border: 1px solid #CDCDCD;
-    border-radius: 0.5rem;
-    transition: .2s;
-    transform: translateY(2rem);
-    opacity: 0;
-    text-decoration: none;
-    color: rgb(31, 68, 133);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
-}
+        
+    .social-icons li a {
+        position: relative;
+        display: block;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid #CDCDCD;
+        border-radius: 0.5rem;
+        transition: .2s;
+        transform: translateY(2rem);
+        opacity: 0;
+        text-decoration: none;
+        color: rgb(31, 68, 133);
+        -webkit-transform: translateY(2rem);
+        -moz-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+        -o-transform: translateY(2rem);
+    }
     
 
 #tarjeta1{
@@ -2691,6 +2725,9 @@ footer p{
         -o-transition: 0.5s;
     }
 
+    #contenedorSeccionesCCI{
+        margin-bottom: 200px;
+    }
     
     .profile-name{
         padding: 2rem 3rem;
@@ -3152,23 +3189,29 @@ footer p{
     }
 
     .home-content h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .home-content h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .home-content p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
+    #herramientas{
+        margin-right: -10px;
+    }
     .container {
         position: absolute;
+        margin-top: 50px;
         top: 8rem;
         right: 0;
-        left: 15%;
+        left: 20%;
     } 
+
+    
 
         
     .profile {
@@ -3220,168 +3263,270 @@ footer p{
     }
     
 
+        
+    .social-icons li a {
+        position: relative;
+        display: block;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid #CDCDCD;
+        border-radius: 0.5rem;
+        transition: .2s;
+        transform: translateY(2rem);
+        opacity: 0;
+        text-decoration: none;
+        color: rgb(31, 68, 133);
+        -webkit-transform: translateY(2rem);
+        -moz-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+        -o-transform: translateY(2rem);
+    }
+     .seccionesNav{
     
-.social-icons li a {
-    position: relative;
-    display: block;
-    display: grid;
-    place-items: center;
-    background: #ffffff;
-    font-size: 13px;
-    font-weight: bold;
-    width: 1.8rem;
-    height: 1.8rem;
-    border: 1px solid #CDCDCD;
-    border-radius: 0.5rem;
-    transition: .2s;
-    transform: translateY(2rem);
-    opacity: 0;
-    text-decoration: none;
-    color: rgb(31, 68, 133);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
-}
-
-.containerNav{
-    width: 93%;
-    left: 13px;
-    margin-top: -15px;
-}
-
-.containerNav a{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-items: center;
-
-    width: 60px;
-}
-
-
-.elementos{
-    transition-duration: 0.5s;
-    margin-bottom: 20px;
-}
-
-
-.elementos a > span{
-    transition-duration: 0.5s;
-    position: relative;
-    top: -5px;
-    left: 0px;
-    margin-top: -5px;
-    margin-left: 0px;
-    opacity: 0;
-    transition-duration: 0.5s;
-    color: black; 
-}
-
-.elementos a:hover > span{
-    position: relative;
-    top: -10px;
-    left: 0px; 
-    margin-top: -10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    opacity: 1;
-    transition-duration: 0.5s;
-} 
-
-#asignaturasSH {
-    margin-left: 20px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(21, 21, 21);
-    text-align: start;
-    font-size: 13px;
-  }
-
-  #footer{
-    background: none;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    display: block;
-    color: var(--primary-color-Letras);
-    height: 200px;
-    width: 20px;
-    top: 35%;
-    left: 20px;
-    align-items: center;
-    text-align: center;
-    -webkit-writing-mode: sideways-lr;
-    -ms-writing-mode: sideways-lr;
-}
-  
-
-.titulos{
-    margin-top: 5%;
-    margin-bottom: 0px;
-    font-size: 45px;
-    text-decoration: underline;
-    margin: 0 auto;
-}
-
-
-#tarjeta1{
-    margin-top: 50px;
-}
-
-.cardCCI{
-    width: 95%;
-    max-width: clamp(20rem, 80vw, 54.25rem);
-    min-width: 10rem;
-    min-height: 17.5rem;
-}
-#contenedorSeccionesCCI{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    margin-right: 15%;
-    height: auto;
-    margin-bottom: 100px;
-    color: var(--primary-color-Letras);
-    
-}
-
-#textH1{
-    display: flex;
-
-    font-size: 35px;
-    font-weight:700;
-    color: var(--primary-color-Letras);
-    z-index: 5;
-    
-  }
-
-.containerH3 .text{
-    
-    font-size: 20px;
-    font-weight: 700;
-    color: #00abf0;
+        width: 83%;
+        top: 1300px;
+        margin-top: 100px;
+        left: 0px;
+        display: block;
+        text-align: center;
+        z-index: 5;
+    }
    
-   
-    top: 270px;
-    height: auto;
-    width: auto;
+    .containerNav{
+        position: fixed;
+        align-items: flex-end;
+        top: 75%;
+        height: 250px;
+        width: 85%;
+        display: flex;
+        z-index: 10001;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        z-index: 100001;
+    }
+
+    .containerNav a{
+        display: absolute;
+        margin: 1%;
+        color: var(--primary-color-IconosNav);
+        font-weight: bolder;
+        transition-duration: 0.5s;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 65px;
+        transition-duration: 0.5s;
+    }
+
+
+    .formaIzquierda{
+        display: hidden;
+        opacity: 0;
+    }
+
+    .formaMovil{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height:120px;
+        background-color: var(--primary-color-FiguraIzquierda);
+        bottom: 20px;
+        left: 0px;
+        z-index: 100000;
+        
+    }
+
+    #footer{
+        background-color: #000c22;
+        
+        position: fixed;
+        color: var(--primary-color-Letras);
+        bottom: 0px;
+        left: 0px;
+        align-items: center;
+        text-align: center;
+        z-index: 100000;
+    }
+
+    .elementos{
+        transition-duration: 0.5s;
+        margin-bottom: 60px;
+    }
+
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        
+        margin-left: 0px;
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+    }
+
+    .elementos a svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+        z-index: 1;
+        background-color: var(--primary-color-FiguraIzquierda);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        box-shadow: none;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 95px;
+        text-decoration: none;
+        margin-bottom: 40px;
+        
+    }
+    .elementos a:hover svg{
+        width: 75%;
+        height: 75%;
+        box-shadow: none;
+        transition-duration: 0.5s;
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+        background-color: rgb(204, 207, 237);
+        padding: 5%;
 }
+
+    .elementos a:focus-within svg{
+        width: 75%;
+        height: 75%;
+        transition-duration: 0.5s;
+    }
+    
+
+    #asignaturasSH {
+        margin-left: 20px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(21, 21, 21);
+        text-align: start;
+        font-size: 13px;
+    }
+
+    
+
+    
+
+
+    #tarjeta1{
+        margin-top: 50px;
+    }
+
+    .cardCCI{
+        width: 95%;
+        max-width: clamp(20rem, 80vw, 54.25rem);
+        min-width: 10rem;
+        min-height: 17.5rem;
+    }
+    #contenedorSeccionesCCI{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 15%;
+        height: auto;
+        margin-bottom: 100px;
+        color: var(--primary-color-Letras);
+        
+    }
+
+    #textH1{
+        display: flex;
+
+        font-size: 35px;
+        font-weight:700;
+        color: var(--primary-color-Letras);
+        z-index: 5;
+        
+    }
+
+    .containerH3 .text{
+        
+        font-size: 20px;
+        font-weight: 700;
+        color: #00abf0;
+    
+    
+        top: 270px;
+        height: auto;
+        width: auto;
+    }
 
 }
 
 @media (max-width: 430px){
+    
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+        width: 24rem;
+        height: 25.5rem;
+        border-radius: 25rem;
+        box-shadow: 0 5px 18px rgb(0, 0, 0);
+        cursor: pointer;
+        transition: 0.5s;
+        z-index: 6;
+        -webkit-border-radius: 25rem;
+        -moz-border-radius: 25rem;
+        -ms-border-radius: 25rem;
+        -o-border-radius: 25rem;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .profile-wrapper{
+        width: 95%;
+    }
+
     .container {
         position: absolute;
-        top: 9rem;
+        top: 8rem;
         right: 0;
-        left: 7%;
+        left: 5%;
     } 
     .home-content{
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     .home-content h1{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .home-content h3{
@@ -3392,58 +3537,484 @@ footer p{
     .titulos{
         margin-top: 80px;
     }
+
+    #herramientas{
+        margin-right: 20px;
+    }
     
     
-.cardCCI{
-    width: 90%;
-    max-width: clamp(20rem, 80vw, 54.25rem);
-    min-width: 10rem;
-    min-height: 17.5rem;
-}
+    .cardCCI{
+        width: 95%;
+        max-width: clamp(20rem, 80vw, 54.25rem);
+        min-width: 10rem;
+        min-height: 17.5rem;
+    }
 
-.cardCCI a{
-    width: 50%;
-}
+    .cardCCI a{
+        width: 50%;
+    }
+        
+    .articles article{
+        width: 85%;
+    }
+    #textH1{
+        display: flex;
+
+        font-size: 30px;
+        font-weight:700;
+        color: var(--primary-color-Letras);
+        z-index: 5;
+        
+    }
+
+    .containerH3 .text{
+        
+        font-size: 20px;
+        font-weight: 700;
+        color: #00abf0;
     
-.articles article{
-    width: 85%;
-}
-#textH1{
-    display: flex;
-
-    font-size: 30px;
-    font-weight:700;
-    color: var(--primary-color-Letras);
-    z-index: 5;
     
-  }
+        top: 270px;
+        height: auto;
+        width: auto;
+    }
 
-.containerH3 .text{
+    #seccionAcademica{
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+
+      
+    .containerNav{
+        position: fixed;
+        align-items: flex-end;
+        top: 78%;
+        height: 250px;
+        width: 85%;
+        display: flex;
+        z-index: 10001;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        z-index: 100001;
+    }
+
+    .containerNav a{
+        display: absolute;
+        margin: 1%;
+        color: var(--primary-color-IconosNav);
+        font-weight: bolder;
+        transition-duration: 0.5s;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 65px;
+        transition-duration: 0.5s;
+    }
+
+
+    .formaIzquierda{
+        display: hidden;
+        opacity: 0;
+    }
+
+    .formaMovil{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height:120px;
+        background-color: var(--primary-color-FiguraIzquierda);
+        bottom: 20px;
+        left: 0px;
+        z-index: 100000;
+        
+    }
+
+    #footer{
+        background-color: #000c22;
+        
+        position: fixed;
+        color: var(--primary-color-Letras);
+        bottom: 0px;
+        left: 0px;
+        align-items: center;
+        text-align: center;
+        z-index: 100000;
+    }
+
+    .elementos{
+        transition-duration: 0.5s;
+        margin-bottom: 60px;
+    }
+
     
-    font-size: 20px;
-    font-weight: 700;
-    color: #00abf0;
-   
-   
-    top: 270px;
-    height: auto;
-    width: auto;
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        
+        margin-left: 0px;
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+    }
+
+    .elementos a svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+        z-index: 1;
+        background-color: var(--primary-color-FiguraIzquierda);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        box-shadow: none;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 95px;
+        text-decoration: none;
+        margin-bottom: 40px;
+        
+    }
+    .elementos a:hover svg{
+        width: 75%;
+        height: 75%;
+        box-shadow: none;
+        transition-duration: 0.5s;
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+        background-color: rgb(204, 207, 237);
+        padding: 5%;
 }
 
- #seccionAcademica{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
+    .elementos a:focus-within svg{
+        width: 75%;
+        height: 75%;
+        transition-duration: 0.5s;
+    }
 
 }
 
-@media (max-width: 400px){
-    .container {
+@media (max-width: 400px) and (max-height: 700px) {
+    .home{
+        margin-top: 250px;
+        width: 100%;
+    }
+
+    .global-section-Home{
+        width: 100%;
+        justify-content: center;
+
+    }
+
+
+     .container {
         position: absolute;
-        top: 9rem;
+        top: 7rem;
         right: 0;
         left: 3%;
     } 
+
+        
+    .containerNav a{
+        display: absolute;
+        padding:1%;
+        margin: 1%;
+        color: var(--primary-color-IconosNav);
+        font-weight: bolder;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        transition-duration: 0.5s;
+    }
+
+    .home-content{
+        width: 100%;
+        max-width: 600px;
+        margin-right: 10%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .seccionesNav{
+    
+    width: 83%;
+    top: 1500px;
+    margin-top: 150px;
+    display: block;
+    text-align: center;
+    z-index: 5;
+  
+    }
+
+        
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+        width: 18rem;
+        height: 18.5rem;
+        border-radius: 25rem;
+        box-shadow: 0 5px 18px rgb(0, 0, 0);
+        cursor: pointer;
+        transition: 0.5s;
+        z-index: 6;
+        -webkit-border-radius: 25rem;
+        -moz-border-radius: 25rem;
+        -ms-border-radius: 25rem;
+        -o-border-radius: 25rem;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    
+    .profile-name{
+        padding: 2rem 3rem;
+        font-size: 14px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #nombreProfile{
+        font-size: 26px;
+    }
+
+    .profile-bio{
+        text-align: start;
+        position: absolute;
+        padding: 0rem 0rem;
+        top:110px;
+        left: 30px;
+        margin: 0;
+    }
+    .social-icons{
+        bottom: 4rem; 
+    }
+
+        
+    .social-icons li a {
+        position: relative;
+        display: block;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid #CDCDCD;
+        border-radius: 0.5rem;
+        transition: .2s;
+        transform: translateY(2rem);
+        opacity: 0;
+        text-decoration: none;
+        color: rgb(31, 68, 133);
+        -webkit-transform: translateY(2rem);
+        -moz-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+        -o-transform: translateY(2rem);
+    }
+        
+    .containerNav{
+        position: fixed;
+        align-items: flex-end;
+        top: 75%;
+        height: 270px;
+        width: 85%;
+        display: flex;
+        z-index: 10001;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        z-index: 100001;
+    }
+
+    .containerNav a{
+        display: absolute;
+        margin: 1%;
+        color: var(--primary-color-IconosNav);
+        font-weight: bolder;
+        transition-duration: 0.5s;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 65px;
+        transition-duration: 0.5s;
+    }
+
+
+    .formaIzquierda{
+        display: hidden;
+        opacity: 0;
+    }
+
+    .formaMovil{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height:120px;
+        background-color: var(--primary-color-FiguraIzquierda);
+        bottom: 20px;
+        left: 0px;
+        z-index: 100000;
+        
+    }
+
+    #footer{
+        background-color: #000c22;
+        
+        position: fixed;
+        color: var(--primary-color-Letras);
+        bottom: 0px;
+        left: 0px;
+        align-items: center;
+        text-align: center;
+        z-index: 100000;
+    }
+
+    .elementos{
+        transition-duration: 0.5s;
+        margin-bottom: 60px;
+    }
+
+    
+    .elementos a:hover > span{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        left: auto; 
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    } 
+
+    .elementos a > span{
+        transition-duration: 0.5s;
+        position: relative;
+        
+        margin-left: 0px;
+        opacity: 0;
+        transition-duration: 0.5s;
+        color: black; 
+    }
+
+    .elementos a svg{
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+        z-index: 1;
+        background-color: var(--primary-color-FiguraIzquierda);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        box-shadow: none;
+    }
+
+    .elementos a:hover{
+        transition-duration: 0.5s;
+        width: 95px;
+        text-decoration: none;
+        margin-bottom: 40px;
+        
+    }
+    .elementos a:hover svg{
+        width: 75%;
+        height: 75%;
+        box-shadow: none;
+        transition-duration: 0.5s;
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+        background-color: rgb(204, 207, 237);
+        padding: 5%;
+}
+
+    .elementos a:focus-within svg{
+        width: 75%;
+        height: 75%;
+        transition-duration: 0.5s;
+    }
+    
+    
+
+    #tarjeta1{
+        margin-left: 0%;
+        margin-right: 6%;
+    }
+    #tarjeta2{
+        margin-left: 0%;
+        margin-right: 6%;
+        
+    }
+
+    #contenedorSeccionesCCI{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 100px;
+        color: var(--primary-color-Letras);
+        
+    }
+
+    #textH1{
+        display: flex;
+        font-size: 33px;
+        font-weight:700;
+        color: var(--primary-color-Letras);
+        z-index: 5;
+        
+      }
+      
+    
+    .containerH3 .text{
+        
+        font-size: 27px;
+        font-weight: 700;
+        color: #00abf0;
+        top: 0px;
+        height: auto;
+        width: auto;
+    }
+
 }
 
 @media (max-width: 350px){
@@ -3492,50 +4063,6 @@ footer p{
      #seccionAcademica{
     margin-top: 80px;
     margin-bottom: 80px;
-    }
-
-}
-
-
-
-
-@media (max-height: 700px){
-    
-.containerNav a{
-    display: absolute;
-    padding:1%;
-    margin: 1%;
-    color: var(--primary-color-IconosNav);
-    font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 60px;
-    transition-duration: 0.5s;
-}
-
-.home-content{
-    width: 100%;
-    max-width: 900px;
-    margin-right: 15%;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.container {
-    position: absolute;
-    top: 8rem;
-    right: 0;
-} 
-
-    .seccionesNav{
-    
-    width: 83%;
-    top: 1600px;
-    margin-top: 150px;
-    display: block;
-    text-align: center;
-    z-index: 5;
-  
     }
 
 }
@@ -3599,8 +4126,8 @@ footer p{
     .seccionesNav{
     
     width: 83%;
-    top: 2000px;
-    margin-top: 200px;
+    top: 500px;
+    margin-top: 100px;
     display: block;
     text-align: center;
     z-index: 5;
