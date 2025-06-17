@@ -96,10 +96,10 @@ body{
 
     --primary-colorFondo: #f6f6f6;
     --primary-color-Letras: rgb(8, 26, 39);
-    --primary-color-FiguraIzquierda: rgb(31, 173, 255);
-    --primary-color-IconosNav: rgb(237, 237, 238);
+    --primary-color-FiguraIzquierda: rgb(0, 51, 81);
+    --primary-color-IconosNav: rgb(255, 255, 255);
     --primary-color-SombraIconosNav:  white;
-    --primary-color-cursorRadios: rgba(0, 255, 255, 0.155);
+    --primary-color-cursorRadios: rgba(4, 129, 245, 0.098);
     --opacidadCursorRadios: 20%;
     --primary-fondo-cristal: rgba(255, 255, 255, 0.60);
     --boxShadowFigura:  rgba(49, 49, 49, 0.375);
