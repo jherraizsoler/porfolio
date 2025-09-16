@@ -6,7 +6,7 @@
       --primary-color-FiguraIzquierda: white;
       --primary-color-IconosNav: rgb(2, 61, 110);
       --primary-color-SombraIconosNav: rgb(15, 15, 15);
-      --primary-color-cursorRadios: rgba(59, 70, 169, 0.278);
+      --primary-color-cursorRadios: rgba(58, 64, 129, 0.739);
       --opacidadCursorRadios: 35%;
       --primary-opacity-cristal: rgba(255, 255, 255, 0.30);
       --boxShadowFigura:  rgba(20, 20, 20, 0.89);
@@ -19,7 +19,36 @@
       --primaryCCI: #29283F;
       --primary-violetCCI: #4c6dfc;
 
+        /* Changes the primary theme color to purple using primitives */
+        --sl-color-primary-50: var(--sl-color-purple-50);
+        --sl-color-primary-100: var(--sl-color-purple-100);
+        --sl-color-primary-200: var(--sl-color-purple-200);
+        --sl-color-primary-300: var(--sl-color-purple-300);
+        --sl-color-primary-400: var(--sl-color-purple-400);
+        --sl-color-primary-500: var(--sl-color-purple-500);
+        --sl-color-primary-600: var(--sl-color-purple-600);
+        --sl-color-primary-700: var(--sl-color-purple-700);
+        --sl-color-primary-800: var(--sl-color-purple-800);
+        --sl-color-primary-900: var(--sl-color-purple-900);
+        --sl-color-primary-950: var(--sl-color-purple-950);
+
+        --sl-color-neutral-600: #ffffff; 
+        --sl-color-neutral-inactivas: rgb(172, 172, 172);
+
+        --sl-background-hiberus: rgba(31, 31, 80, 0.501);
+        --sl-background-ktuin: rgba(148, 31, 31, 0.53);
+
+        --pill-color_azul: #5992c2; /* Color por defecto */
+        --pill-color_verde:  #306c52; 
+        --pill-color_morado:  #642c8a; 
+        
+
+        --background-color-recomendation:  #1c2d47;
+        --color-letras-autor: #b0b0b0; 
+
+
 }
+
 
 * {
     margin: 0;
@@ -44,8 +73,8 @@ html {
     -moz-transition: all linear .2s;
     -ms-transition: all linear .2s;
     -o-transition: all linear .2s;
-    background: linear-gradient(		90deg, rgb(255, 192, 1) 0%, 		rgb(215, 226, 0) 16.15%, 		rgb(128, 211, 74) 33.85%, 		rgb(0, 214, 136) 50.52%,	    rgb(1, 208, 192) 66.15%, 		#4bd7e3 81.25%, 		#625BFE 100%	);
-    box-shadow: 0 0 10px 0px rgb(119, 185, 255);
+    background: white;
+    box-shadow: 0 0 10px 0px rgb(12, 31, 62);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -53,7 +82,7 @@ html {
     -o-border-radius: 100px;
     top: 0;
     left: 0px;
-    z-index: 100;
+    z-index: 1000;
     overflow: hidden;
 }
 
@@ -78,7 +107,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 5;
 }
 
 body{
@@ -104,6 +133,18 @@ body{
     --primary-fondo-cristal: rgba(255, 255, 255, 0.60);
     --boxShadowFigura:  rgba(49, 49, 49, 0.375);
     --primary-color-LetrasSpanNav: black;
+    --sl-color-neutral-600: #00033a; 
+    --sl-background-hiberus: rgba(16, 16, 81, 0.883);
+    --sl-color-neutral-inactivas: rgba(26, 27, 88, 0.59);
+    --sl-background-ktuin: rgb(131, 37, 37);
+
+    --pill-color_azul: #5992c2; /* Color por defecto */
+    --pill-color_verde:  #306c52; 
+    --pill-color_morado:  #642c8a; 
+
+    --background-color-recomendation:  #d7ddf4;
+    --color-letras-autor: #525f6f; 
+
 
 }
 
@@ -119,7 +160,7 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
 }
 
 #a_portafolio{
@@ -205,6 +246,52 @@ body{
   }
   
   
+
+  /** Start TabGroup Academic*/
+
+    /* Estilos para el contenedor de las pestañas */
+    sl-tab-group {
+        z-index: 5;
+    /* Cambia el color de la barra inferior de las pestañas */
+    --track-color: #555;
+    /* El color del texto de la pestaña activa y del indicador */
+    --indicator-color:  var(--sl-color-neutral-600);
+    }
+
+    /* Estilos de las pestañas individuales (inactivas) */
+    sl-tab::part(base) {
+    /*Colordeltexto*/color: var(--sl-color-neutral-inactivas);
+    /*Eliminaelfondodelaspestañas*/background-color: transparent;
+    /*Añadeunespaciadointeriorparaqueseveanmásgrandes*/padding: 1rem 1.5rem;
+    /*Suavizaloscambiosconunatransición*/transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+    /* Estilos para la pestaña activa */
+    sl-tab[aria-selected="true"]::part(base) {
+    /* El color del texto se vuelve blanco al estar activo */
+    color: var(--sl-color-neutral-600);
+    /* Elimina el fondo si el tema oscuro está activado */
+    background-color: transparent;
+    }
+
+    /* Estilos al pasar el ratón por encima */
+    sl-tab:hover::part(base) {
+    /* El color del texto se vuelve blanco al pasar el ratón */
+     color: var(--sl-color-neutral-600);
+    }
+
+    /* Centra los elementos de la barra de navegación */
+    .centered-tabs::part(nav) {
+    display: flex;
+    justify-content: center;
+    }
+    /** End TabGroup Academic*/
+
+
   @keyframes roll{
      0% {
       opacity: 0;
@@ -442,13 +529,14 @@ color:#081b29;
     position: absolute;
     top: 15rem;
     right: 25%;
+    z-index: 10;
 } 
   
 .profile-wrapper {
     width: 21rem;
     height: 21rem;
     position: absolute;
-    z-index: 6;
+    z-index: 10;
 }
 
 .profile {
@@ -463,7 +551,7 @@ color:#081b29;
     box-shadow: 0 5px 18px rgb(0, 0, 0);
     cursor: pointer;
     transition: 0.5s;
-    z-index: 6;
+    z-index: 10;
     -webkit-border-radius: 25rem;
     -moz-border-radius: 25rem;
     -ms-border-radius: 25rem;
@@ -479,7 +567,7 @@ color:#081b29;
     border-radius: 25rem;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    z-index: 10;
     transition: .5s;
     -webkit-border-radius: 25rem;
     -moz-border-radius: 25rem;
@@ -647,28 +735,10 @@ color:#081b29;
     padding-top: 0;
 }
 
-footer{
-    position: fixed;
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 5%;
-    bottom: 0px;
-    left: 0%;
-    color: white;
-    background-color: rgb(6, 39, 80);
-    z-index: 1000;
-}
-
-footer p{
-   margin-top: 0.5%;
-}
-
-
 .containerNav{
     position: fixed;
     align-items: start;
-    top: 31%;
+    top: 36%;
     left: 20px;
     width: 60px;
     display: block;
@@ -785,17 +855,41 @@ footer p{
 }
 
 .seccionesNav{
-    
+    position: relative;
     width: 83%;
     margin-left:5%;
     margin-right: 5%;
-    top: 1000px;
+    
     left: 0px;
     display: block;
     text-align: center;
-    z-index: 5;
+    z-index: 10;
   
 }
+
+.home{
+   position: relative;
+   height: 80vh;
+   display: flex;
+   align-items: center; 
+   padding: 0 5%;
+   z-index: 2;
+}
+
+.home-content{
+    max-width: 800px;
+    z-index: 5;
+    margin-left: 10%;
+
+}
+
+.home-content{
+    max-width: 800px;
+    z-index: 5;
+    margin-left: 10%;
+
+}
+
 
 #proyectos{
     margin-top: 200px;
@@ -809,6 +903,7 @@ footer p{
     color: var(--primary-color-Letras);
     margin-left: 0%;
     margin-top: 20px;
+    z-index: 6;
 
 
   
@@ -818,6 +913,7 @@ footer p{
     margin-left: 10%;
     color: var(--primary-color-Letras);
     margin-left: 0%;
+    z-index: 6;
    
 }
 
@@ -826,6 +922,7 @@ footer p{
     display: flex;
     justify-content: center;
     padding-left: 0%;
+    z-index: 6;
 }
 
 .articles {
@@ -840,7 +937,7 @@ footer p{
     font-family: Mulish;
     font-size: 16px;
     color: black;
-    z-index: 2;
+    z-index: 6;
 }
  
 
@@ -859,7 +956,7 @@ footer p{
     -moz-border-radius: 20px 20px 20px 20px ;
     -ms-border-radius: 20px 20px 20px 20px ;
     -o-border-radius: 20px 20px 20px 20px ;
-    z-index: 2;
+    z-index: 6;
 }
 
 .articles article a {
@@ -1106,6 +1203,23 @@ footer p{
     background-color: rgb(236, 0, 0);
 }
 
+footer{
+    position: fixed;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 5%;
+    bottom: 0px;
+    left: 0%;
+    color: white;
+    background-color: rgb(6, 39, 80);
+    z-index: 1000;
+}
+
+footer p{
+   margin-top: 0.5%;
+}
+
 /*Efecto Titulo Principal  "Porfolio"*/
 .tracking-in-expand-fwd-top{ -webkit-animation:tracking-in-expand-fwd-top 1s cubic-bezier(.215,.61,.355,1.000) both; animation:tracking-in-expand-fwd-top 1s cubic-bezier(.215,.61,.355,1.000) both; }
 /* ----------------------------------------------
@@ -1219,17 +1333,6 @@ footer p{
   
 
 
-
-#seccionAcademica{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    margin-left: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    z-index: 100;
-}
-
 #seccionCCI{
     position: absolute;
     top: 2300px;
@@ -1297,208 +1400,371 @@ footer p{
     border: 3px solid   rgb(129, 65, 17);;
 }
 
-
-
-
-#tarjetasAcademicas{
-    display: flex;
-    flex-direction:initial;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-
-.card {
-    width: 500px;
-    margin-top: 50px;
-    margin-bottom: 300px;
-}
-
-
-#tarjeta1{
-    
-    margin-left:50px;
-    
-}
-
-#tarjeta2{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-  
-  .card-content {
-    position: relative;
-    padding: 15rem 5rem;
-    transform-style: preserve-3d;
-    transition: transform 3s;
-    -webkit-transition: transform 3s;
-    -moz-transition: transform 3s;
-    -ms-transition: transform 3s;
-    -o-transition: transform 3s;
-}
-  #tarjeta1:hover .card-content {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-  
-}
-
-  #tarjeta2:hover .card-content {
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-}
-  
-  .card-front,
-  .card-back {
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 2rem;
+/*
+#contenedorTecnologias{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    height: 750px;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 80px;
+    margin-right: 100px;
+    height: auto;
+    margin-bottom: 100px;
+    color: var(--primary-color-Letras);
+    z-index: 100;
+
 }
-  
-  
-  
-  .card-front,
-  .card-back {
+*/
+
+
+#contenedorRecomendaciones {
+    display: flex;
+    flex-direction: column;
+    /* Elimina las propiedades redundantes de margin */
+    margin: 0 auto 100px; 
+    width: 90%;
+    height: auto;
+    margin-bottom: 200px;
+    color: var(--primary-color-Letras);
+    z-index: 100;
+    padding: 2rem;
+    /* Alinea el contenido del contenedor principal al centro */
+    align-items: center; 
+    text-align: center;
+}
+
+/* Contenedor de las dos cajas de recomendación */
+.recommendation-grid {
+    display: flex;
+    gap: 20px; /* Espacio entre las cajas */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    width: 100%;
+}
+
+.recommendation {
+    flex: 1; /* Permite que las cajas se expandan y contraigan */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--background-color-recomendation); /* Añade un color de fondo para que se vean como cajas separadas */
+    /* Alinea el texto a la izquierda, no al centro */
+    text-align: left; 
+    align-content: center;
+}
+
+.recommendation p {
+    text-align: justify; /* Justifica el texto de los párrafos */
+}
+
+.author {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--color-letras-autor); /* Un color más suave para el autor */
+    text-align: right; /* Alinea el nombre y puesto a la derecha */
+}
+
+#contenedorTecnologias {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto 100px auto; 
+    width: 90%;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    height: auto;
+    color: var(--primary-color-Letras);
+    z-index: 100;
+
+    padding: 2rem;
+   /**background-color: #2a2a2a;*/ /* Un fondo oscuro para contrastar */
+    color: white;
+    
+}
+
+.titulos {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cuadrícula adaptable */
+    gap: 1.5rem; /* Espacio entre categorías */
+}
+
+/* Estilos base para todas las categorías */
+.skill-category {
+    /* Define la variable de color en el nivel de la categoría */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro de la categoría */
+.skill-category h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white; /* Línea de color de la categoría */
+    padding-bottom: 0.5rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Espacio entre las "pills" */
+}
+
+/* El resto de tus estilos... */
+
+.skill-pill_azul {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_azul);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_azul:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-pill_verde {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_verde);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_verde:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-pill_morado {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_morado);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_morado:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.skills-grid > div:nth-child(1) {
+    background-color: #485abf; /* Azul oscuro */
+}
+
+.skills-grid > div:nth-child(1) h3 {
+    border-bottom: 2px solid #0cc3fb;;
+}
+
+.skills-grid > div:nth-child(2) {
+    background-color: #1b4d1d; /* Azul ligeramente más claro */
+}
+
+.skills-grid > div:nth-child(2) h3 {
+    border-bottom: 2px solid #219f25;
+}
+
+.skills-grid > div:nth-child(3) {
+    background-color: #3f1c60; /* Azul medio */
+}
+
+.skills-grid > div:nth-child(3) h3 {
+    border-bottom: 2px solid #8d00c9;
+}
+
+/* Puedes seguir con esta lógica para más categorías */
+
+.skills-grid > div:nth-child(4) {
+    background-color: #204c75;
+}
+
+.skills-grid > div:nth-child(4) h3 {
+    border-bottom: 2px solid #008be0;
+}
+
+.skills-grid > div:nth-child(5) {
+    background-color: #245888;
+}
+
+.skills-grid > div:nth-child(5) h3 {
+    border-bottom: 2px solid #009bf3;
+}
+
+.skills-grid > div:nth-child(6) {
+    background-color: #26659a;
+}
+
+.skills-grid > div:nth-child(6) h3 {
+    border-bottom: 2px solid #00abff;
+}
+
+
+
+
+#seccionAcademica{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+
+/* Estilos del contenedor de cada panel */
+.info-panel {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    background-position: center;
+    background-color: rgb(18, 27, 41); /* Oscurece la imagen para que el texto sea legible */
+    background-blend-mode: overlay; /* Mezcla la imagen y el color de fondo */
+    
+    /* El resto de tus estilos de panel... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilos para el panel de Desarrollador */
+sl-tab-panel[name="desarrollador"] .info-panel {
+  background-image: url('./Media/losEnlaces.jpg'); 
+}
+
+/* Estilos para el panel de Soporte IT */
+sl-tab-panel[name="soporte_it"] .info-panel {
+  background-image: url('./Media/DSC_0105.jpg');
+}
+
+/* Estilos para el panel de Big Data - IA */
+sl-tab-panel[name="bigdata_ia"] .info-panel {
+  background-image: url('./Media/AI-big-data.jpg');
+}
+
+/* Estilos para el panel de Desarrollador */
+sl-tab-panel[name="desarrolladorExperiencia"] .info-panel {
+  background-color: var(--sl-background-hiberus); 
+}
+
+/* Estilos para el panel de Soporte IT */
+sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
+  background-color: var(--sl-background-ktuin);
+}
+/* Clase base para los estilos de texto comunes */
+.panel-text-base {
     color: white;
     text-shadow: 2px 2px 7px black;
-  }
-  
-  .movie-description{
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px black;
-  }
-  
-  #tarjeta1 .card-front {
-    background-image: url(./Media/DSC_0023.jpg);
-    background-color: rgba(255, 255, 255, 0.134);
-    align-items: center;
-  }
-
-  #tarjeta2 .card-front {
-    background-image: url(./Media/losEnlaces.jpg);
-    background-color: rgba(255, 255, 255, 0.285);
-    align-items: center;
-  }
-
-  .card-front::before {
-    content: "";
-    position: absolute;
-    inset: 1rem;
-    border: 3px solid rgb(255, 255, 255);
-    transform: translateZ(2rem);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
 }
-  .title {
-    font-family: "Teko", sans-serif;
+
+/* Título principal (para "Desarrollador de aplicaciones..." o "GS SMR") */
+.panel-title {
     font-size: 5rem;
-    text-transform: uppercase;
-    line-height: 120%;
-    transform: translateZ(4.4rem);
-  }
+}
 
-  .tituloBackDAM{
-    text-align: center;
-    font-size: 1rem;
-    text-shadow: 3px  0px 0px rgb(255, 0, 0),
-    0px  3px 0px rgb(255, 0, 0),
-   -3px  0px 0px rgb(255, 0, 0),
-    0px -3px 0px rgb(255, 0, 0);
-  }
+/* Título de menor jerarquía (para la empresa) */
+.panel-title_Medio {
+    font-size: 3.5rem;
+}
 
-  .sub-title {
-    font-size: 1rem;
+/* Subtítulo (para el tipo de contrato, etc.) */
+.panel-subtitle {
+    font-size: 1.5rem;
     font-weight: bolder;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    transform: translateZ(3rem);
-  }
-  .movie-description{
-    text-align: start;
-  }
-  
-  #tarjeta1 .card-back {
-    background-image: url(./Media/DSC_0105.jpg);
-    transform: rotateY(180deg);
-    gap: 0.5rem;
-  }
+    color: white;
+    text-shadow: 2px 2px 7px black;
 
-  #tarjeta2 .card-back {
-    background-image: url(./Media/los-enlaces-centro.jpg);
-    transform: rotateY(180deg);
-    gap: 0.5rem;
-  }
+    /* Añade una raya debajo */
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem; /* Ajusta el margen para separarlo de la fecha */
+}
 
-  .back-title{
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-    align-self: center;
-    text-align:center;
-    transform: translateZ(2rem);
-  }
-  
-  .card-back span {
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-  }
-  .btn {
-    text-decoration: none;
-    font-weight: 500;
+/* Fecha y otros datos */
+.panel-date {
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.panel-content {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: left;
+    max-width: 90%;
+}
+
+.panel-content span {
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos para la lista de asignaturas */
+.subjects-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    columns: 2; /* Organiza la lista en dos columnas */
+    column-gap: 30px;
+}
+
+.subjects-list li {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilo del botón */
+.panel-link {
+    display: inline-block;
     padding: 0.5rem 2.2rem;
-    color: yellow;
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 71, 129, 0.985);
     border: 2px solid white;
     border-radius: 100px;
     text-align: center;
-    align-self: center;
-    margin-top: 1rem;
-    transform: translateZ(2rem);
+    text-decoration: none;
     transition: 0.3s ease;
-  }
-  .btn:hover {
-    background-color: rgb(185, 164, 0);
-    color: white;
-    border: 2px solid rgb(185, 164, 0);
-  }
-  
-  #asignaturasSH {
-    margin-left: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(21, 21, 21);
-    text-align: start;
-  }
+}
 
+.panel-link:hover {
+    background-color: rgb(0, 120, 185);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 169, 185);
+}
 
 
 /*Tarjetas Cursos*/
@@ -2594,7 +2860,7 @@ footer p{
 
     .containerNav{
         margin-left: 0px;
-        top: 230px;
+        top: 240px;
         left: 11px;
         text-align:center;
     }
