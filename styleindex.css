@@ -738,7 +738,7 @@ color:#081b29;
 .containerNav{
     position: fixed;
     align-items: start;
-    top: 36%;
+    top: 28%;
     left: 20px;
     width: 60px;
     display: block;
@@ -752,8 +752,8 @@ color:#081b29;
     position: fixed;
     display: block;
     left:-200px;
-    top: 12%;
-    height: 820px;
+    top: 5%;
+    height: 860px;
     width: 400px;
     backdrop-filter: blur(10px);
     background-color: var(--primary-color-FiguraIzquierda);
@@ -916,137 +916,302 @@ color:#081b29;
     z-index: 6;
    
 }
+/* --- Galería de Proyectos --- */
 
-#contenedorArticulos{
+/* Contenedor principal de la galería. Usa Flexbox para centrar y manejar el espaciado. */
+#contenedorArticulos {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 0%;
-    z-index: 6;
+    padding: 5% 20px 200px 20px; /* Se mejoró el padding para ser más responsive */
+    box-sizing: border-box;
 }
 
+/* Configura una cuadrícula adaptable. Esta es la mejora clave. */
 .articles {
-    display: flex;
-    margin-top: 5%;
-    flex-wrap: wrap;
+    display: grid;
+    /* Las columnas se crean automáticamente, ajustándose al ancho disponible.
+       Se usa 'minmax' para asegurar que cada tarjeta tenga un tamaño mínimo de 280px y un máximo de 1fr (igual que las demás). */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; /* Espacio uniforme entre los recuadros */
+    max-width: 75rem; /* Ancho máximo, igual que el que tenías */
     justify-content: center;
     align-items: center;
-    max-width: 75rem;
-    gap: 1.5rem;
-    margin-bottom: 200px;
-    font-family: Mulish;
-    font-size: 16px;
-    color: black;
-    z-index: 6;
 }
- 
-
-
-
-.articles article {
-    max-width: 20rem;
-    max-height: 19rem;
+/* Estilos de cada recuadro de proyecto */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
     cursor: pointer;
     position: relative;
-    display: block;
-    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease-in-out;
+    /*Transiciónparaelefectode"hundimiento"*/border: 4px solid #8c8c8c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/* Efecto al pasar el cursor (hover) en la tarjeta completa */
+.project-card:hover {
+    /*Muevelatarjetaligeramentehaciaabajoyreducesutamaño*/transform: translateY(2px) scale(0.98);
+    /*box-shadow: 0 2px 4px rgba(162, 162, 162, 0.5);*/
+    /*Reducelasombraparaunefectodehundimiento*/border-color: #dfdfdf;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/* Estilo de la figura y la imagen dentro de la tarjeta */
+.project-card figure {
+    width: 100%;
+    height: 16rem; 
+    margin: 0;
     overflow: hidden;
-    border-radius: 20px 20px 20px 20px ;
-    -webkit-border-radius: 20px 20px 20px 20px ;
-    -moz-border-radius: 20px 20px 20px 20px ;
-    -ms-border-radius: 20px 20px 20px 20px ;
-    -o-border-radius: 20px 20px 20px 20px ;
-    z-index: 6;
-}
-
-.articles article a {
-    display: inline-flex;
-    color: rgb(0, 119, 255);
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 
-.articles article h2 {
+.project-card:hover::after {
+    opacity: 1; /* Muestra el nuevo borde al hacer hover */
+}
+
+/* Título de la tarjeta, centrado y con mejor color */
+.project-card h2 {
     text-align: center;
-    margin: 0 0 1rem 0;
-    font-size: 1.6rem;
-    color: var(rgb(36, 36, 36));
+    margin: 0;
+    padding: 0 10px; /* Añadido padding para evitar que el texto toque los bordes */
+    font-size: 1.2rem; /* Tamaño de fuente más estándar para portafolios */
+    color: #000c22; /* Color más visible en fondo oscuro */
+    line-height: 1.4;
     transition: color 0.3s ease-out;
 }
-  
-  
-.articles article img {
-    max-width: 100%;
-    transform-origin: center;
-    transition: transform 0.4s ease-in-out; 
-}
-  
-.article-preview {
-    padding-top: 1rem;
-    padding-left: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-right: 2.5rem;
-    background: white;
-    box-shadow: inset rgba(5, 32, 76, 0.22) 0px 5px  10px;
-    border-radius: 0px 0px 20px 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    -moz-border-radius: 0px 0px 20px 20px;
-    -ms-border-radius: 0px 0px 20px 20px;
-    -o-border-radius: 0px 0px 20px 20px;
-}
 
-.articles figure {
+.project-card img {
     width: 100%;
-    height: 12rem;
-    overflow: hidden;
-    
-}
-
-.articles figure img {
     height: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
+    object-fit: cover;
+    transform-origin: center;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+/* Efecto de la imagen al pasar el cursor (hover) */
+.project-card:hover img {
+    /*Aquísecambiaelvalordelaescalaparaquelaimagensereduzca*/transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -o-transform: scale(0.99);
+}
+
+/* Estilos de la previsualización del artículo */
+.article-preview {
+    padding: 1rem 1.5rem; /* Padding ajustado para mejor aspecto */
+    background-color: #fff;
+    box-shadow: inset rgba(5, 32, 76, 0.22) 0px 5px 10px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ocupa el espacio restante en la tarjeta */
+}
+
+/* Estilos para el texto de previsualización (si existe) */
+.article-preview p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #393939; /* Color de texto más legible */
+}
+
+/* --- Ventana Modal --- */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10000;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: #2c3444;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1000px;
+    /*Seaumentóelanchomáximoparamejorvisibilidad*/width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: transform 0.3s ease;
+    text-align: left;
+    
     
 }
 
-.articles article:hover img {
-    transition-duration: 0.5s;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+.modal-container.show .modal {
+    transform: scale(1);
 }
 
-.articles article:hover{
-    transition-duration: 0.3s;
-    border: white 8px ridge;
-    border-radius: 30px 30px 30px 30px ;
-    -webkit-border-radius: 30px 30px 30px 30px ;
-    -moz-border-radius: 30px 30px 30px 30px ;
-    -ms-border-radius: 30px 30px 30px 30px ;
-    -o-border-radius: 30px 30px 30px 30px ;
+/* Títulos dentro del modal */
+.modal h2 {
+    text-align: center;
+    color: #1a2235;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
-.articles article{
-    transition-duration: 0.3s;
-    border:  4px solid rgb(233, 233, 233);
-    border-radius: 20px 20px 20px 20px ;
-    -webkit-border-radius: 20px 20px 20px 20px ;
-    -moz-border-radius: 20px 20px 20px 20px ;
-    -ms-border-radius: 20px 20px 20px 20px ;
-    -o-border-radius: 20px 20px 20px 20px ;
+.modal h3, .modal h4 {
+    color: #005498;
+    border-bottom: 2px solid #6a9bd8;
+    padding-bottom: 5px;
+    margin-top: 25px;
 }
 
-#ventanaGrande{
-    position: fixed;
-    background-color: white;
+.modal p {
+    margin: 10px 0;
+    color: #000000;
+}
+
+
+/* Estilo del contenedor de las aptitudes */
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+/* Estilo de cada "chip" de aptitud */
+.skill-chip {
+    background-color: #0051ae;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para la imagen en la parte superior del modal */
+.modal-image-top {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    margin: -30px -30px 20px -30px;
+    margin-top:20px;
+    border-radius: 10px 10px 10px 10px;
+    /*Usamosflexboxparacentrarlaimagenhorizontalyverticalmentesifueranecesario*/display: flex;
+    justify-content: center;
+    /*Centrahorizontalmente*/align-items: center;
+    /*Centraverticalmentesielcontenedortienealturafija*//*Estableceunaalturafijaparaelcontenedorparaquelaimagentengaunespaciodondecentrarse*/height: 300px;
+
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+}
+
+.modal-image-top img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    /*Mantienelaproporción*/display: block;
+    object-fit: contain;
     margin: 0 auto;
-    width: 70%;
-    height: 60%;
+    border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
 }
 
+/* Estilo para las listas de aptitudes */
+.modal-body p strong {
+    color: #000000;
+}
+
+/* Estilos de las imágenes dentro del modal */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Para galerías de imágenes, puedes hacerlas más pequeñas */
+    max-height: 300px;
+    width: auto;
+}
+
+/* Estilos de los botones de enlace dentro del modal */
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.link-button {
+    background-color: #153961;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: ;
+    letter-spacing: 2px;
+}
+
+.link-button:hover {
+    background-color: #4b8ac4;
+}
+
+.botonClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
 ::-webkit-scrollbar{
     width: 1.2em;
     overflow-x: none;
@@ -1339,7 +1504,7 @@ footer p{
 
     width: 100%;
     height: auto;
-    z-index: 100;
+    z-index: 99;
 }
 
 #contenedorSeccionesCCI{
@@ -1352,7 +1517,7 @@ footer p{
     height: auto;
     margin-bottom: 100px;
     color: var(--primary-color-Letras);
-    z-index: 100;
+    z-index: 99;
 }
 
 #contenedorSeccionesCCI > .seccionCCI{
@@ -1373,7 +1538,7 @@ footer p{
     background: var(--primary-opacity-cristal);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2px);
-    z-index: 900;
+    z-index: 90;
     border: 1px solid rgba(255, 255, 255, 0.18);
     
     
@@ -1399,23 +1564,6 @@ footer p{
     background-color: rgba(251, 132, 73, 0.829);
     border: 3px solid   rgb(129, 65, 17);;
 }
-
-/*
-#contenedorTecnologias{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
-    margin-left: 80px;
-    margin-right: 100px;
-    height: auto;
-    margin-bottom: 100px;
-    color: var(--primary-color-Letras);
-    z-index: 100;
-
-}
-*/
-
 
 #contenedorRecomendaciones {
     display: flex;
@@ -1769,13 +1917,12 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 /*Tarjetas Cursos*/
 
-
 .containerCCI{
     align-items: center;
     margin: 0 auto;
     
     margin-top: 50px;
-    z-index: 100;
+   
 }
 
 .cardCCI {
