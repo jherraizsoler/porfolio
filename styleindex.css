@@ -917,27 +917,25 @@ color:#081b29;
    
 }
 /* --- Galería de Proyectos --- */
-
 /* Contenedor principal de la galería. Usa Flexbox para centrar y manejar el espaciado. */
 #contenedorArticulos {
     width: 100%;
-    display: flex;
+    display: flex; /* Mantenemos Flexbox para centrar el grid */
     justify-content: center;
-    padding: 5% 20px 200px 20px; /* Se mejoró el padding para ser más responsive */
+    padding: 5% 20px 200px 20px;
     box-sizing: border-box;
 }
 
-/* Configura una cuadrícula adaptable. Esta es la mejora clave. */
+/* Configuración de la cuadrícula de proyectos */
 .articles {
-    display: grid;
-    /* Las columnas se crean automáticamente, ajustándose al ancho disponible.
-       Se usa 'minmax' para asegurar que cada tarjeta tenga un tamaño mínimo de 280px y un máximo de 1fr (igual que las demás). */
+    display: grid; /* Habilitamos CSS Grid */
+    /* Crea columnas que se ajustan automáticamente.
+       minmax(280px, 1fr) asegura que cada tarjeta tenga un ancho mínimo de 280px y un máximo de 1 fracción del espacio disponible. */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem; /* Espacio uniforme entre los recuadros */
-    max-width: 75rem; /* Ancho máximo, igual que el que tenías */
-    justify-content: center;
-    align-items: center;
+    max-width: 75rem; /* Ancho máximo para el contenedor de la cuadrícula */
 }
+
 /* Estilos de cada recuadro de proyecto */
 .project-card {
     background-color: #ffffff;
@@ -947,27 +945,19 @@ color:#081b29;
     position: relative;
     display: flex;
     flex-direction: column;
-    transition: transform 0.4s ease-in-out;
-    /*Transiciónparaelefectode"hundimiento"*/border: 4px solid #8c8c8c;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border: 4px solid #8c8c8c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     height: 100%;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 
 /* Efecto al pasar el cursor (hover) en la tarjeta completa */
 .project-card:hover {
-    /*Muevelatarjetaligeramentehaciaabajoyreducesutamaño*/transform: translateY(2px) scale(0.98);
-    /*box-shadow: 0 2px 4px rgba(162, 162, 162, 0.5);*/
-    /*Reducelasombraparaunefectodehundimiento*/border-color: #dfdfdf;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    /* Mueve la tarjeta ligeramente hacia abajo y reduce su tamaño */
+    transform: translateY(2px) scale(0.98);
+    /* Reduce la sombra para un efecto de hundimiento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-color: #dfdfdf;
 }
 
 /* Estilo de la figura y la imagen dentro de la tarjeta */
@@ -978,18 +968,13 @@ color:#081b29;
     overflow: hidden;
 }
 
-
-.project-card:hover::after {
-    opacity: 1; /* Muestra el nuevo borde al hacer hover */
-}
-
 /* Título de la tarjeta, centrado y con mejor color */
 .project-card h2 {
     text-align: center;
     margin: 0;
-    padding: 0 10px; /* Añadido padding para evitar que el texto toque los bordes */
-    font-size: 1.2rem; /* Tamaño de fuente más estándar para portafolios */
-    color: #000c22; /* Color más visible en fondo oscuro */
+    padding: 0 10px;
+    font-size: 1.2rem;
+    color: #000c22;
     line-height: 1.4;
     transition: color 0.3s ease-out;
 }
@@ -999,11 +984,9 @@ color:#081b29;
     height: 100%;
     object-fit: cover;
     transform-origin: center;
-    transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: 0.5s; /* Ajustado a 0.5s para una transición más rápida */
 }
+
 
 /* Estilos para el visor de imagen a pantalla completa */
 .fullscreen-image-viewer {
@@ -2082,6 +2065,16 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     transition: all 0.3s;
     font-weight: 500;
 }
+/* Oculta el menú desplegable por defecto para que no se vea en desktop */
+.mobile-nav {
+    display: none;
+}
+
+/* El resto de tus estilos de desktop, si los tienes */
+.desktop-nav {
+   
+}
+
 
 .chipCCI:hover {
     background-color: var(
@@ -2359,6 +2352,16 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 }
 
 }
+
+/* 2. Media Query para pantallas entre 1440px y 768px: 2 columnas */
+/* Ajusta el valor `1440px` según tu necesidad real */
+@media (max-width: 1440px) {
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 @media (max-width: 1300px) {
     .home{
         margin-top: 200px;
@@ -2553,6 +2556,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     } 
     
 }
+
 
 
 @media (max-width: 1000px) {
@@ -2809,8 +2813,11 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 }
 
 @media (max-width: 770px) {
+    .header{
+        margin-top:100px;
+    }
     .home {
-        margin-top: 250px;
+        margin-top: 220px;
         width: 100%;
     }
 
@@ -2821,7 +2828,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
     .home-content {
         width: 100%;
-        max-width: 900px;
+        max-width: 90%;
         margin-right: 15%;
         margin-left: 0;
         padding-left: 0;
@@ -2881,6 +2888,9 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     .social-icons {
         bottom: 4rem; 
     }
+    .formaIzquierda{
+        display: none;
+    }
 
     .social-icons li a {
         position: relative;
@@ -2933,50 +2943,66 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         margin-bottom: 100px;
         color: var(--primary-color-Letras);
     }
-    
-    .formaIzquierda {
-        top: 20px;
-        height: 860px;
-        width: 380px;
-    }
 
     /* Oculta la navegación horizontal en móviles */
     .containerNav {
         display: none;
     }
     
-    /* Estilos para el nuevo menú desplegable */
+    /* Estilos para el menú desplegable en móviles */
     .mobile-nav {
-        /* Se asume que esta clase existe en tu HTML, como te sugerí anteriormente. */
-        display: block; /* Lo mostramos en móvil */
+        display: block; 
         position: fixed; /* Lo fijamos en la pantalla */
-        bottom: 0; /* Lo colocamos en la parte inferior */
+        top: 0px; /* ¡Cambiado de bottom a top! */
         left: 0;
         width: 100%;
-        padding: 15px; /* Espacio interno */
-        background-color: white; /* Fondo blanco */
-        border-top: 1px solid #ccc; /* Separación sutil del contenido */
-        z-index: 1000; /* Asegura que esté por encima de todo el contenido */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        text-align: center; /* Centra el spinner/select */
+        padding: 15px;
+        background-color: rgb(10, 33, 50);
+        color: white;
+        font-size:16px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 1px solid #ffffff; /* Separación sutil del contenido en la parte inferior */
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(79, 79, 79, 0.849); /* Sombra hacia abajo */
+        text-align: center;
     }
+
+    
 
     .mobile-nav select {
         width: 90%;
         padding: 10px;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 20px;
         border: 1px solid #ccc;
+        color:white;
+    }
+
+    .mobile-nav select option:checked {
+        background-color: #485474; /* Color de fondo */
+        color: white; /* Color del texto */
+        font-weight: bolder;
+    }
+
+    /* Opcionalmente, para un mejor contraste en la lista desplegable */
+    .mobile-nav select option:hover {
+        background-color: #1f3f98;
+        color: white;
+    }
+
+    .articles {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-/*
+
 @media (max-width:700px) and (max-height: 800px){
     .home-content{
         width: 100%;
         max-width: auto;
         margin-right: 15%;
         padding-right: 0;
-        margin-top: 250px;
+        margin-top: 230px;
     }
     .seccionesNav{
     
@@ -2997,86 +3023,10 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
     }
 
-    .containerNav{
-        margin-left: 0px;
-        top: 240px;
-        left: 11px;
-        text-align:center;
-    }
-    .containerNav a{
-
-        align-items: center;
-        margin-top: 0px;
-        width: 50px;
-        transition-duration: 0.5s;
-    }
-
-    .elementos{
-        align-items: center;
-        align-content: center;
-    }
-
-    .elementos  a{
-        align-items: center;
-        text-decoration: none;
-    }
-    .elementos  a > svg{ 
-        align-items: center;
-        margin-left: 0px;
-        width: 50px;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 54px;
-        align-items: center;
-        
-    }
-    .elementos a:hover svg{
-        width: 54px;
-        box-shadow: none;
-        align-items: center;
-        top: 50px;
-        transition-duration: 0.5s;
-        margin-bottom: 10px;
-
-    }
     
-    .elementos a:focus-within svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-    }
+}
 
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        margin-left: -50px;
-        margin-top: -80px;
-        text-align: center;
-        left: auto; 
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-        font-size: 12px;
-       
-    }
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-    
-}*/
-
-/*Barra navegación Movil*//*
+/*Barra navegación Movil*/
 @media (max-width: 650px) and (max-height: 800px) {
     .home{
         margin-top: 250px;
@@ -3180,55 +3130,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         -ms-transform: translateY(2rem);
         -o-transform: translateY(2rem);
     }
-        
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 78%;
-        height: 250px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    .containerNav a{
-        display: absolute;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        transition-duration: 0.5s;
-        align-items: center;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        width: 65px;
-        transition-duration: 0.5s;
-    }
-
-
-    .formaIzquierda{
-        display: hidden;
-        opacity: 0;
-    }
-
-    .formaMovil{
-        display: block;
-        position: fixed;
-        width: 100%;
-        height:120px;
-        background-color: var(--primary-color-FiguraIzquierda);
-        bottom: 20px;
-        left: 0px;
-        z-index: 100000;
-        
-    }
-
+    
     #footer{
         background-color: #000c22;
         
@@ -3573,24 +3475,25 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 @media (max-width: 520px) {
     .home{
         margin-top: 250px;
-        width: 100%;
+        width: 470px;
+        margin-left: -20px;
+        padding: 0px;
     }
 
 
     .global-section-Home{
         width: 100%;
         justify-content: center;
+        padding-left: 30px;
+        padding-right:10px;
 
     }
 
     .home-content{
         width: 100%;
         max-width: auto;
-        margin-right: 15%;
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 30px;
+        margin-top: 50px;
+        
     }
 
     .home-content h1 {
@@ -3602,7 +3505,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     }
 
     .home-content p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #herramientas{
@@ -3610,7 +3513,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     }
     .container {
         position: absolute;
-        margin-top: 50px;
+        margin-top: 0px;
         top: 8rem;
         right: 0;
         left: 20%;
@@ -3698,68 +3601,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         text-align: center;
         z-index: 5;
     }
-   
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 80%;
-        height: 250px;
-        width: 100%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 5px;
-        left: 0px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    .containerNav a{
-        display: absolute;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        transition-duration: 0.5s;
-        align-items: center;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        width: 65px;
-        transition-duration: 0.5s;
-    }
-
-
-    .formaIzquierda{
-        display: hidden;
-        opacity: 0;
-    }
-
-    .formaMovil{
-        display: block;
-        position: fixed;
-        width: 100%;
-        height:120px;
-        background-color: var(--primary-color-FiguraIzquierda);
-        bottom: 20px;
-        left: 0px;
-        z-index: 100000;
-        
-    }
-
-    #footer{
-        background-color: #000c22;
-        
-        position: fixed;
-        color: var(--primary-color-Letras);
-        bottom: 0px;
-        left: 0px;
-        align-items: center;
-        text-align: center;
-        z-index: 100000;
-    }
-
+    
     .elementos{
         transition-duration: 0.5s;
         margin-bottom: 60px;
@@ -3914,17 +3756,17 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
     }
 
     .profile-wrapper{
-        width: 95%;
+        width: 100%;
     }
 
     .container {
         position: absolute;
         top: 8rem;
         right: 0;
-        left: 5%;
+        left: 20%;
     } 
     .home-content{
-        margin-top: 200px;
+        margin-top: 80px;
     }
 
     .home-content h1{
@@ -3940,9 +3782,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         margin-top: 80px;
     }
 
-    #herramientas{
-        margin-right: 20px;
-    }
     
     
     .cardCCI{
@@ -3988,53 +3827,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 
       
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 78%;
-        height: 250px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 10px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    .containerNav a{
-        display: absolute;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        transition-duration: 0.5s;
-        align-items: center;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        width: 65px;
-        transition-duration: 0.5s;
-    }
-
-
-    .formaIzquierda{
-        display: hidden;
-        opacity: 0;
-    }
-
-    .formaMovil{
-        display: block;
-        position: fixed;
-        width: 100%;
-        height:120px;
-        background-color: var(--primary-color-FiguraIzquierda);
-        bottom: 20px;
-        left: 0px;
-        z-index: 100000;
-        
-    }
 
     #footer{
         background-color: #000c22;
@@ -4048,85 +3840,16 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         z-index: 100000;
     }
 
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 40px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-}
-
-    .elementos a:focus-within svg{
-        width: 75%;
-        height: 75%;
-        transition-duration: 0.5s;
-    }
-
 }
 
 @media (max-width: 400px) and (max-height: 700px) {
 
     body{
-        margin-left: 5%;
+        margin-left: 20%;
     }
 
     .home{
-        margin-top: 250px;
+        margin-top: 380px;
         width: 100%;
         
     }
@@ -4145,21 +3868,12 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         left: 3%;
     } 
 
-    .containerNav a{
-        display: absolute;
-        padding:1%;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        margin-top: 10px;
-        margin-bottom: 60px;
-        transition-duration: 0.5s;
-    }
+    
 
     .home-content{
         width: 100%;
         max-width: 900px;
-        margin-right: 5%;
+        margin-right: 2%;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
@@ -4168,7 +3882,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
     .seccionesNav{
     
-        width: 83%;
+        width: 85%;
         top: 1500px;
         margin-top: 150px;
         display: block;
@@ -4248,60 +3962,12 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         -o-transform: translateY(2rem);
     }
         
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 75%;
-        height: 270px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 10px;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    .containerNav a{
-        display: absolute;
-        margin: 1%;
-        color: var(--primary-color-IconosNav);
-        font-weight: bolder;
-        transition-duration: 0.5s;
-        align-items: center;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        width: 65px;
-        transition-duration: 0.5s;
-    }
-
-
-    .formaIzquierda{
-        display: hidden;
-        opacity: 0;
-    }
-
-    .formaMovil{
-        display: block;
-        position: fixed;
-        width: 100%;
-        height:120px;
-        background-color: var(--primary-color-FiguraIzquierda);
-        bottom: 20px;
-        left: 0px;
-        z-index: 100000;
-        
-    }
 
     #footer{
         background-color: #000c22;
         
         position: fixed;
-        color: var(--primary-color-Letras);
+        color: white;
         bottom: 0px;
         left: 0px;
         align-items: center;
@@ -4309,100 +3975,23 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         z-index: 100000;
     }
 
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 40px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 75%;
-        height: 75%;
-        transition-duration: 0.5s;
-    }
     
     #herramientas{
         margin-right: 0px;
         right: -140px;
-        top: 10px;
+        top: 70px;
         height: auto;
     }
 
     #herramientas > a > svg{
         width: 30px;
+        margin-bottom: 20px;
     }
 
     #herramientas > #icon{
         width: 50px;
         margin-right: 5px;
-        top: 1px;
-    }
-
-    #tarjeta1{
-        margin-left: 0%;
-        margin-right: 6%;
-    }
-    #tarjeta2{
-        margin-left: 0%;
-        margin-right: 6%;
-        
+        top: 70px;
     }
 
     #contenedorSeccionesCCI{
@@ -4488,107 +4077,10 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 }
 
+
+
 @media (max-height: 750px){
     
-
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 80%;
-        height: 240px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -4608,105 +4100,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 @media (max-height: 700px){
     
-
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 79%;
-        height: 240px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -4726,105 +4119,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 @media (max-height: 670px){
     
-
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 77.5%;
-        height: 240px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -4845,16 +4139,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 @media (max-height: 630px){
     
-        .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 10px;
-            margin-bottom: 70px;
-            transition-duration: 0.5s;
-    }
+       
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -4874,105 +4159,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 @media (max-height: 600px){
     
-
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 75%;
-        height: 240px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -4992,105 +4178,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
 
 @media (max-height: 570px){
     
-    
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 74%;
-        height: 230px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -5100,11 +4187,7 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         padding-right: 0;
     }
     
-    .container {
-        position: absolute;
-        top: 7rem;
-        right: 0;
-    }
+  
     
     .container {
         position: absolute;
@@ -5112,119 +4195,11 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         right: 0;
     }
 
-    .seccionesNav{
-    
-    width: 83%;
-    top: 500px;
-    margin-top: 100px;
-    display: block;
-    text-align: center;
-    z-index: 5;
-  
-    }
 }
 
 @media (max-height: 500px){
     
     
-    .containerNav{
-        position: fixed;
-        align-items: flex-end;
-        top: 72%;
-        height: 220px;
-        width: 85%;
-        display: flex;
-        z-index: 10001;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        z-index: 100001;
-    }
-
-    
-    .containerNav a{
-            display: absolute;
-            padding:1%;
-            margin: 1%;
-            color: var(--primary-color-IconosNav);
-            font-weight: bolder;
-            margin-top: 5px;
-            margin-bottom: 60px;
-            transition-duration: 0.5s;
-    }
-
-    
-    .elementos{
-        transition-duration: 0.5s;
-        margin-bottom: 60px;
-    }
-
-    
-    .elementos a:hover > span{
-        position: relative;
-        text-align: center;
-        top: -20px;
-        left: auto; 
-        margin-top: -20px;
-        margin-bottom: 20px;
-        margin-left: -12px;
-        opacity: 1;
-        transition-duration: 0.5s;
-    } 
-
-    .elementos a > span{
-        transition-duration: 0.5s;
-        position: relative;
-        
-        margin-left: 0px;
-        opacity: 0;
-        transition-duration: 0.5s;
-        color: black; 
-    }
-
-    .elementos a svg{
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.5s;
-        z-index: 1;
-        background-color: var(--primary-color-FiguraIzquierda);
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        box-shadow: none;
-    }
-
-    .elementos a:hover{
-        transition-duration: 0.5s;
-        width: 95px;
-        text-decoration: none;
-        margin-bottom: 50px;
-        
-    }
-    .elementos a:hover svg{
-        width: 75%;
-        height: 75%;
-        box-shadow: none;
-        transition-duration: 0.5s;
-        border-radius: 40%;
-        -webkit-border-radius: 40%;
-        -moz-border-radius: 40%;
-        -ms-border-radius: 40%;
-        -o-border-radius: 40%;
-        background-color: rgb(204, 207, 237);
-        padding: 5%;
-    }
-
-    .elementos a:focus-within svg{
-        width: 80%;
-        height: 80%;
-        transition-duration: 0.5s;
-    }
-
     .home-content{
         width: 100%;
         max-width: 900px;
@@ -5245,17 +4220,6 @@ sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
         top: 6rem;
         right: 0;
     }
-
-    .seccionesNav{
-    
-    width: 83%;
-    top: 500px;
-    margin-top: 100px;
-    display: block;
-    text-align: center;
-    z-index: 5;
-  
-    }
 }
-*/
+
 /*Medias Querys menu forma izquierda*/
