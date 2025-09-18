@@ -90,7 +90,7 @@
     <formaIzquierda class="formaIzquierda 77tilt-in-left-1">
     </formaIzquierda>
 
-    <nav class="containerNav">
+    <nav class="containerNav desktop-nav">
         <!-- Academico -->
         <div class="elementos">
             <a href="#contenedorSeccionesAcademicas">
@@ -239,6 +239,18 @@
             </a>
         </div>
     </nav>
+
+
+    <select id="mobile-nav" class="mobile-nav" onchange="window.location.href=this.value">
+        <option value="" selected disabled>Selecciona una sección</option>
+        <option value="#contenedorSeccionesAcademicas">Académico</option>
+        <option value="#contenedorSeccionesExperiencia">Experiencia</option>
+        <option value="#proyectos">Proyectos</option>
+        <option value="#contenedorSeccionesCCI">Cursos</option>
+        <option value="#contenedorTecnologias">Tecnologías</option>
+        <option value="#contenedorRecomendaciones">Recomendaciones</option>
+    </select>
+
 
     <!-- MENU NAVEGACIÓN MOVIL   slide-in-bck-bottom  -->
     <formaMovil class="formaMovil"></formaMovil>
@@ -618,11 +630,11 @@
                     </div>
                 </article>
 
-               
+
             </div>
         </div>
         <div id="fullscreen-image-viewer" class="fullscreen-image-viewer">
-             <img id="fullscreen-image" src="" alt="Ampliada">
+            <img id="fullscreen-image" src="" alt="Ampliada">
         </div>
 
         <div class="modal-container" id="modal-container">
