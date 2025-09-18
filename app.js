@@ -1334,10 +1334,18 @@ const projectsData = {
   },
 };
 
-// 2. Referencias a los elementos del DOM
+// 2. Referencias a los elementos del DOM (se agrega el visor de imágenes)
 const articlesContainer = document.getElementById("contenedorArticulos");
 const modalContainer = document.getElementById("modal-container");
 const modalContent = modalContainer.querySelector(".modal");
+
+// Visor de imágenes a pantalla completa
+const fullscreenImageViewer = document.getElementById('fullscreen-image-viewer');
+const fullscreenImage = document.getElementById('fullscreen-image');
+let isZoomed = false;
+let isDragging = false;
+let startX, startY, currentX, currentY;
+let imageX = 0, imageY = 0;
 
 // 3. Manejador de eventos para abrir el modal
 articlesContainer.addEventListener("click", (event) => {
@@ -1352,9 +1360,10 @@ articlesContainer.addEventListener("click", (event) => {
 
       // Lógica para la imagen principal y las adjuntas
       if (projectData.images && projectData.images.length > 0) {
-        contentHTML += `<div class="modal-image-top">
-                                    <img src="${projectData.images[0]}" alt="${projectData.title}">
-                                </div>`;
+        contentHTML += `
+          <div class="modal-image-top">
+            <img src="${projectData.images[0]}" alt="${projectData.title}" class="modal-project-image">
+          </div>`;
       }
 
       contentHTML += `<h2>${projectData.title}</h2>`;
@@ -1362,10 +1371,6 @@ articlesContainer.addEventListener("click", (event) => {
 
       // Añade los "chips" de aptitudes si existen
       if (projectData.skills && projectData.skills.length > 0) {
-        // Obtener la clave del objeto para determinar el idioma
-        const projectId = Object.keys(projectsData).find(
-          (key) => projectsData[key] === projectData
-        );
         const lang = projectId.includes("_en") ? "en" : "es";
 
         if (lang === "es") {
@@ -1385,35 +1390,22 @@ articlesContainer.addEventListener("click", (event) => {
       if (projectData.images && projectData.images.length > 1) {
         contentHTML += `<div class="project-images">`;
         for (let i = 1; i < projectData.images.length; i++) {
-          contentHTML += `<img src="${projectData.images[i]}" alt="${projectData.title}">`;
+          contentHTML += `<img src="${projectData.images[i]}" alt="${projectData.title}" class="modal-project-image">`;
         }
         contentHTML += `</div>`;
       }
 
       // Añade los enlaces si existen
       if (projectData.links) {
-        // Obtener la clave del objeto para determinar el idioma
-        const projectId = Object.keys(projectsData).find(
-          (key) => projectsData[key] === projectData
-        );
         const lang = projectId.includes("_en") ? "en" : "es";
-
         contentHTML += `<div class="project-links">`;
 
         if (projectData.links.github) {
-          if (lang === "es") {
-            contentHTML += `<a href="${projectData.links.github}" target="_blank" class="link-button">Ver en GitHub</a>`;
-          } else {
-            contentHTML += `<a href="${projectData.links.github}" target="_blank" class="link-button">View on GitHub</a>`;
-          }
+          contentHTML += `<a href="${projectData.links.github}" target="_blank" class="link-button">${lang === "es" ? "Ver en GitHub" : "View on GitHub"}</a>`;
         }
 
         if (projectData.links.linkedin) {
-          if (lang === "es") {
-            contentHTML += `<a href="${projectData.links.linkedin}" target="_blank" class="link-button">Ver en LinkedIn</a>`;
-          } else {
-            contentHTML += `<a href="${projectData.links.linkedin}" target="_blank" class="link-button">View on LinkedIn</a>`;
-          }
+          contentHTML += `<a href="${projectData.links.linkedin}" target="_blank" class="link-button">${lang === "es" ? "Ver en LinkedIn" : "View on LinkedIn"}</a>`;
         }
 
         contentHTML += `</div>`;
@@ -1435,3 +1427,95 @@ modalContainer.addEventListener("click", (event) => {
     modalContainer.classList.remove("show");
   }
 });
+// Lógica para el visor de imágenes (Sección modificada)
+// =======================================================
+// **DELEGACIÓN DE EVENTOS**: Escucha en el contenedor del modal
+modalContainer.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal-project-image')) {
+    openFullscreenImageViewer(event.target.src);
+  }
+});
+
+// Evento para cerrar el visor al hacer clic en el fondo
+fullscreenImageViewer.addEventListener('click', (event) => {
+  if (event.target === fullscreenImageViewer) {
+    closeFullscreenImageViewer();
+  }
+});
+
+// Evento para hacer zoom/des-zoom al hacer clic en la imagen ampliada
+fullscreenImage.addEventListener('click', () => {
+  isZoomed = !isZoomed;
+  fullscreenImage.classList.toggle('zoomed', isZoomed);
+  if (!isZoomed) {
+    // Resetear posición al hacer des-zoom
+    imageX = 0;
+    imageY = 0;
+    fullscreenImage.style.transform = `scale(1) translate(0, 0)`;
+  }
+});
+
+// Nuevos eventos para el arrastre de la imagen (Pan)
+fullscreenImage.addEventListener('mousedown', (e) => {
+  if (isZoomed) {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    e.preventDefault(); // Evita la selección de la imagen al arrastrar
+    fullscreenImage.style.cursor = 'grabbing';
+  }
+});
+
+fullscreenImage.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  
+  currentX = e.clientX;
+  currentY = e.clientY;
+  
+  const deltaX = currentX - startX;
+  const deltaY = currentY - startY;
+
+  // Actualiza la posición de la imagen
+  imageX += deltaX;
+  imageY += deltaY;
+
+  // Aplica la transformación de escala y movimiento
+  fullscreenImage.style.transform = `scale(1.5) translate(${imageX}px, ${imageY}px)`;
+  
+  startX = currentX;
+  startY = currentY;
+});
+
+fullscreenImage.addEventListener('mouseup', () => {
+  isDragging = false;
+  fullscreenImage.style.cursor = 'grab';
+});
+
+fullscreenImageViewer.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
+// Cerrar con la tecla Escape
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && fullscreenImageViewer.classList.contains('active')) {
+    closeFullscreenImageViewer();
+  }
+});
+
+// Funciones del visor
+function openFullscreenImageViewer(imageSrc) {
+  fullscreenImage.src = imageSrc;
+  fullscreenImageViewer.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  isZoomed = false;
+  fullscreenImage.classList.remove('zoomed');
+  // Restablecer la posición de la imagen al abrir el visor
+  fullscreenImage.style.transform = 'scale(1) translate(0, 0)';
+  imageX = 0;
+  imageY = 0;
+}
+
+function closeFullscreenImageViewer() {
+  fullscreenImageViewer.classList.remove('active');
+  document.body.style.overflow = '';
+}

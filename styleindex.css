@@ -1005,6 +1005,52 @@ color:#081b29;
     -o-transition: 1s;
 }
 
+/* Estilos para el visor de imagen a pantalla completa */
+.fullscreen-image-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    display: flex; /* Para centrar la imagen */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Asegura que esté por encima de todo */
+    opacity: 0; /* Oculta el visor por defecto */
+    visibility: hidden; /* Oculta el visor por defecto */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fullscreen-image-viewer.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-image-viewer img {
+    max-width: 90%; /* Limita el tamaño inicial de la imagen */
+    max-height: 90%;
+    object-fit: contain; /* Mantiene la relación de aspecto */
+    cursor: grab; /* Cursor para indicar que se puede arrastrar */
+    transition: transform 0.2s ease; /* Transición suave para el zoom */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+}
+
+/* Estilos para el zoom */
+.fullscreen-image-viewer img.zoomed {
+    transform: scale(1.5); /* Aumenta la escala al hacer zoom */
+    cursor: grabbing; /* Cursor para indicar que se está arrastrando */
+    max-width: none; /* Permite que la imagen crezca */
+    max-height: none;
+}
+.modal-content img {
+    border-radius: 20px;
+    /*Puedesajustarelvalorparaunradiomayoromenor*/:;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
 /* Efecto de la imagen al pasar el cursor (hover) */
 .project-card:hover img {
