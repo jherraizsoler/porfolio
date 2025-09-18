@@ -16,8 +16,8 @@ const projectsData = {
         <p>El proyecto es un verdadero sistema Full-Stack, donde el frontend se comunica con el backend de Spring Boot a través de una **API RESTful**. Esta separación de responsabilidades permite que cada capa se desarrolle de forma independiente.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto1/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto1/ventanaPrincipal_1.jpeg",
+      "portfolio/Media/proyectos/Proyecto1/imagenPrincipal.jpeg",
+      "portfolio/Media/proyectos/Proyecto1/ventanaPrincipal_1.jpeg",
     ],
     skills: [
       "JavaFX",
@@ -57,12 +57,12 @@ const projectsData = {
         <p>El proyecto cuenta con manuales de instalación y configuración en el apartado de README.md, y en el paquete de documentación se encuentra todo lo necesario y los requisitos para testear el proyecto en **Netbeans**.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto2/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto2/Pantalla_EditarPersona.jpg",
-      "portafolio/Media/proyectos/Proyecto2/Pantalla_EliminarPersona.jpg",
-      "portafolio/Media/proyectos/Proyecto2/Pantalla_ListadoPersonas.jpg",
-      "portafolio/Media/proyectos/Proyecto2/Pantalla_Login_Usuario_es_admin o user_Contraseña_es_123_.jpg",
-      "portafolio/Media/proyectos/Proyecto2/Pantalla_Principal_User_.jpg",
+      "porfolio/Media/proyectos/Proyecto2/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto2/Pantalla_EditarPersona.jpg",
+      "porfolio/Media/proyectos/Proyecto2/Pantalla_EliminarPersona.jpg",
+      "porfolio/Media/proyectos/Proyecto2/Pantalla_ListadoPersonas.jpg",
+      "porfolio/Media/proyectos/Proyecto2/Pantalla_Login_Usuario_es_admin o user_Contraseña_es_123_.jpg",
+      "porfolio/Media/proyectos/Proyecto2/Pantalla_Principal_User_.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -105,10 +105,10 @@ const projectsData = {
         <p>En resumen, este proyecto es una prueba concreta de mis habilidades como desarrollador full-stack, demostrando mi capacidad para construir soluciones completas y prácticas que resuelven problemas del mundo real.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto3/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto3/Pantalla_AgregarContactol.jpg",
-      "portafolio/Media/proyectos/Proyecto3/Pantalla_EditarContacto.jpg",
-      "portafolio/Media/proyectos/Proyecto3/Pantalla_principal.jpg",
+      "porfolio/Media/proyectos/Proyecto3/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto3/Pantalla_AgregarContactol.jpg",
+      "porfolio/Media/proyectos/Proyecto3/Pantalla_EditarContacto.jpg",
+      "porfolio/Media/proyectos/Proyecto3/Pantalla_principal.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -150,10 +150,10 @@ const projectsData = {
         <p>Para optimizar el código y mejorar la productividad, se integró la librería **Lombok**, reduciendo significativamente el código repetitivo. Este proyecto destaca mi habilidad para trabajar con un stack tecnológico completo (Java, Spring Boot, JPA, Hibernate, MySQL, JSP, JSTL, Maven), demostrando experiencia en el desarrollo de aplicaciones web empresariales funcionales y mantenibles.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto4/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto4/Pantalla_agregarEmpleado.jpg",
-      "portafolio/Media/proyectos/Proyecto4/Pantalla_editarEmpleado.jpg",
-      "portafolio/Media/proyectos/Proyecto4/Pantalla_principal.jpg",
+      "porfolio/Media/proyectos/Proyecto4/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto4/Pantalla_agregarEmpleado.jpg",
+      "porfolio/Media/proyectos/Proyecto4/Pantalla_editarEmpleado.jpg",
+      "porfolio/Media/proyectos/Proyecto4/Pantalla_principal.jpg",
     ],
     skills: [
       "JSTL",
@@ -197,8 +197,8 @@ const projectsData = {
         <p>En resumen, este sistema de presupuestos es un reflejo tangible de mis habilidades como desarrollador **front-end**. Muestra mi dominio de **TypeScript** y **Angular**, mi compromiso con las mejores prácticas de la industria y mi capacidad para convertir un concepto en una aplicación funcional y de alta calidad.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto5/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto5/Ventana_principal.jpg",
+      "porfolio/Media/proyectos/Proyecto5/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto5/Ventana_principal.jpg",
     ], // Agrega las rutas a tus imágenes si las tienes, por ejemplo: ['Media/proyectos/Proyecto5/imagenPrincipal.jpeg']
     skills: [
       "Angular",
@@ -248,11 +248,11 @@ const projectsData = {
         </ul>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto6/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto6/Pantalla_AgregarPersona.jpg",
-      "portafolio/Media/proyectos/Proyecto6/Pantalla_ListadoPersonas.jpg",
-      "portafolio/Media/proyectos/Proyecto6/Pantalla_principal.jpg",
-      "portafolio/Media/proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg",
+      "porfolio/Media/proyectos/Proyecto6/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto6/Pantalla_AgregarPersona.jpg",
+      "porfolio/Media/proyectos/Proyecto6/Pantalla_ListadoPersonas.jpg",
+      "porfolio/Media/proyectos/Proyecto6/Pantalla_principal.jpg",
+      "porfolio/Media/proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -295,16 +295,16 @@ const projectsData = {
         <p>Este proyecto destaca mis habilidades en el desarrollo de software full-stack, la gestión de bases de datos, y la creación de interfaces de usuario funcionales y elegantes en entornos de escritorio y web.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto7/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_AgregarCliente_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_BuscarClientePorID_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_EliminarCliente_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_ListadoDatos_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/MenuPrincipal_Salir_Console.jpg",
-      "portafolio/Media/proyectos/Proyecto7/PantallaPrincipal_DatosGuardados_Swing_GUI_DESKTOP.jpg",
-      "portafolio/Media/proyectos/Proyecto7/PantallaPrincipal_DatosSeleccionados_Swing_GUI_DESKTOP.jpg",
-      "portafolio/Media/proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg",
+      "porfolio/Media/proyectos/Proyecto7/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_AgregarCliente_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_BuscarClientePorID_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_EliminarCliente_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_ListadoDatos_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/MenuPrincipal_Salir_Console.jpg",
+      "porfolio/Media/proyectos/Proyecto7/PantallaPrincipal_DatosGuardados_Swing_GUI_DESKTOP.jpg",
+      "porfolio/Media/proyectos/Proyecto7/PantallaPrincipal_DatosSeleccionados_Swing_GUI_DESKTOP.jpg",
+      "porfolio/Media/proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -339,8 +339,8 @@ const projectsData = {
         <p>El proyecto se encarga de la comunicación con la base de datos, el procesamiento de las peticiones y la validación de los datos, asegurando la integridad y consistencia de la información. Su diseño modular y desacoplado permite que cualquier frontend pueda consumir sus servicios, garantizando una arquitectura flexible y escalable.</p>
     `,
     images: [
-      "portafolio/Media/proyectos/Proyecto8/imagenPrincipal.jpeg",
-      "portafolio/Media/proyectos/Proyecto8/Postmanjpg.jpg",
+      "porfolio/Media/proyectos/Proyecto8/imagenPrincipal.jpeg",
+      "porfolio/Media/proyectos/Proyecto8/Postmanjpg.jpg",
     ],
     skills: [
       "Jakarta EE",
