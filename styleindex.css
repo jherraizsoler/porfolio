@@ -41,7 +41,10 @@
         --pill-color_azul: #5992c2; /* Color por defecto */
         --pill-color_verde:  #306c52; 
         --pill-color_morado:  #642c8a; 
-        
+        --pill-color_naranja: #ff7904;
+        --pill-color_rojo: #a64949;
+        --pill-color_verdeAzulado: #279f85;
+        --pill-color_rosa: #61355a;
 
         --background-color-recomendation:  #1c2d47;
         --color-letras-autor: #b0b0b0; 
@@ -141,6 +144,10 @@ body{
     --pill-color_azul: #5992c2; /* Color por defecto */
     --pill-color_verde:  #306c52; 
     --pill-color_morado:  #642c8a; 
+    --pill-color_naranja: #a75300;
+    --pill-color_rojo: #ff8080;
+    --pill-color_verdeAzulado: #279f85;
+     --pill-color_rosa: #61355a;
 
     --background-color-recomendation:  #d7ddf4;
     --color-letras-autor: #525f6f; 
@@ -1752,6 +1759,74 @@ footer p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.skill-pill_naranja {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_naranja);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_naranja:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-pill_roja {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_rojo);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_roja:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-pill_verdeAzulado {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_verdeAzulado);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_verdeAzulado:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-pill_rosa {
+    /* Usa la variable para el color de fondo */
+    background-color: var(--pill-color_rosa);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-pill_rosa:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .skills-grid > div:nth-child(1) {
     background-color: #485abf; /* Azul oscuro */
@@ -1780,27 +1855,35 @@ footer p{
 /* Puedes seguir con esta lógica para más categorías */
 
 .skills-grid > div:nth-child(4) {
-    background-color: #204c75;
+    background-color: #b89944;
 }
 
 .skills-grid > div:nth-child(4) h3 {
-    border-bottom: 2px solid #008be0;
+    border-bottom: 2px solid #4f2f00;
 }
 
 .skills-grid > div:nth-child(5) {
-    background-color: #245888;
+    background-color: #6f2323;
 }
 
 .skills-grid > div:nth-child(5) h3 {
-    border-bottom: 2px solid #009bf3;
+    border-bottom: 2px solid #3b1414;
 }
 
 .skills-grid > div:nth-child(6) {
-    background-color: #26659a;
+    background-color: #307562;
 }
 
 .skills-grid > div:nth-child(6) h3 {
-    border-bottom: 2px solid #00abff;
+    border-bottom: 2px solid #1f4e3d;
+}
+
+.skills-grid > div:nth-child(7) {
+    background-color: #98599bf3;
+}
+
+.skills-grid > div:nth-child(7) h3 {
+    border-bottom: 2px solid #4e1f4e;
 }
 
 
