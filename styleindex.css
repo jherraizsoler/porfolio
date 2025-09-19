@@ -1938,12 +1938,12 @@ sl-tab-panel[name="bigdata_ia"] .info-panel {
 
 /* Estilos para el panel de Desarrollador */
 sl-tab-panel[name="desarrolladorExperiencia"] .info-panel {
-  background-color: var(--sl-background-hiberus); 
+  background-image: url('./Media/oficinas_central_hiberus.png');
 }
 
 /* Estilos para el panel de Soporte IT */
 sl-tab-panel[name="soporte_itExperiencia"] .info-panel {
-  background-color: var(--sl-background-ktuin);
+  background-image: url('./Media/oficinas_central_ktuin.png');
 }
 /* Clase base para los estilos de texto comunes */
 .panel-text-base {

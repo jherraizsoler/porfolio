@@ -704,6 +704,61 @@ const projectsData = {
       linkedin: "https://lnkd.in/p/dxk_Axrc",
     },
   },
+  
+  
+  "17_es": {
+        title: "Proyecto Frontend Porfolio Jorge Herraiz Soler",
+        content: "Estoy realizando mi porfolio desde cero, estoy materializando mis ideas de aquel porfolio que me gustaría tener, cuáles son las primeras sensaciones y cuidar el contenido. Quiero crear un porfolio que demuestre quien soy, que es lo que hago, cuál es mi iniciativa, mi camino, cuáles son mis valores, principios y el cuidado de los detalles. Me gusta mostrar en el porfolio, el disfrute y estudio constante que estoy desarrollando desde hace 3 años focalizándome en el sector IT. Tecnologías utilizadas: - HTML5 - CSS3 - JavaScript - Shoelace-style para algunos componentes para sección Académica y Experiencia Aprendizaje, elementos o componentes nuevos: - Nav estatico, componente blanco izquierdo con botones de guia por el portafolio (clip-path) - Footer Statico (z-index) - Circulo radius filtro blur cursor, Diseño y UX/UI - Cambio de Idioma Boton / Componente modalidad traductor Ingles y Español - Modo Dark / Light Boton / Componente modalidad Visibilidad / colores - PopUps / Ventanas emergentes Mostrar mas información sobre los proyectos - Sección Académico mejorado - Sección Experiencia mejorado - Sección Proyectos mejorado - Sección Cursos y Certificaciones actualizado - Sección Tecnologías implementado y mejorado - Sección Recomendaciones implementado y mejorado Ultima actualización 19/09/2025 @jherraizsoler",
+        images: [
+          "Media/Proyectos/Proyecto17/imagenPrincipal.jpg",
+          "Media/Proyectos/Proyecto17/imagenPrincipal.jpg",
+          "Media/Proyectos/Proyecto17/imagenPrincipal_componenteAbierto.jpg",
+          "Media/Proyectos/Proyecto17/imagen_Internalización_Ingles_Español.jpg",
+          "Media/Proyectos/Proyecto17/imagen_mode_Dark.jpg",
+          "Media/Proyectos/Proyecto17/imagen_mode_Light.jpg",
+          "Media/Proyectos/Proyecto17/imagen_responsive.jpg",
+          "Media/Proyectos/Proyecto17/imagen_responsive_iphoneSE.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_BigData_IA.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_Developer.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_SoporteIT.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_2.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_3.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_4.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionExperiencia_Developer.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionExperiencia_SoporteIT.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_1.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_captura2.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_imagenAmpliada.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionRecomendaciones.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionTecnologias_captura1.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionTecnologias_captura2.jpg"
+        ],
+        skills: [
+            "Diseño de experiencia de usuario (UX) y interfaz de usuario (UI)",
+            "Resolución de problemas",
+            "Desarrollo front end",
+            "Desarrollo de software",
+            "Programación",
+            "Gestión documental",
+            "JavaScript",
+            "CSS3",
+            "Liderazgo",
+            "Administración de sistemas y servidores",
+            "Microsoft Visual Studio Code",
+            "Analítico y algorítmico",
+            "Gestión y documentación de proyectos",
+            "HTML5",
+            "Metodologías ágiles",
+            "Planificación de proyectos",
+            "Capacidad de análisis e investigación"
+        ],
+        links: {
+            github: "https://github.com/jherraizsoler/portfolio",
+            linkedin: "https://lnkd.in/p/d87i8hnh"
+        }
+  },
 
   // Ingles
   "1_en": {
@@ -1413,7 +1468,61 @@ const projectsData = {
       linkedin: "https://lnkd.in/p/dxk_Axrc",
     },
   },
-};
+   "17_en": {
+        title: "Frontend Project Portfolio Jorge Herraiz Soler",
+        content: "I am building my portfolio from scratch, materializing my ideas of the portfolio I would like to have, what the first impressions are, and taking care of the content. I want to create a portfolio that shows who I am, what I do, what my initiative is, my path, what my values are, principles, and attention to detail. I like to show in the portfolio the enjoyment and constant study that I have been developing for 3 years, focusing on the IT sector. Technologies used: - HTML5 - CSS3 - JavaScript - Shoelace-style for some components for Academic and Experience sections New learnings, elements or components: - Static Nav, white left-side component with guide buttons for the portfolio (clip-path) - Static Footer (z-index) - Circle radius blur filter cursor, Design and UX/UI - Language Change Button / Translator mode component English and Spanish - Dark / Light Mode Button / Visibility / color mode component - PopUps / Pop-up windows Show more information about the projects - Improved Academic section - Improved Experience section - Improved Projects section - Updated Courses and Certifications section - Implemented and improved Technologies section - Implemented and improved Recommendations section Last updated 19/09/2025 @jherraizsoler",
+        images: [
+          "Media/Proyectos/Proyecto17/imagenPrincipal.jpg",
+          "Media/Proyectos/Proyecto17/imagenPrincipal_componenteAbierto.jpg",
+          "Media/Proyectos/Proyecto17/imagen_Internalización_Ingles_Español.jpg",
+          "Media/Proyectos/Proyecto17/imagen_mode_Dark.jpg",
+          "Media/Proyectos/Proyecto17/imagen_mode_Light.jpg",
+          "Media/Proyectos/Proyecto17/imagen_responsive.jpg",
+          "Media/Proyectos/Proyecto17/imagen_responsive_¡phoneSE.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_BigData_IA.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_Developer.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionAcademica_SoporteIT.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_2.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_3.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionCursosCertificaciones_4.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionExperiencia_Developer.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionExperiencia_SoporteIT.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_1.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_captura2.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionProyectos_VentanaEmergente_imagenAmpliada.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionRecomendaciones.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionTecnologias_captura1.jpg",
+          "Media/Proyectos/Proyecto17/imagen_SeccionTecnologias_captura2.jpg"
+        ],
+        skills: [
+            "User Experience (UX) and User Interface (UI) Design",
+            "Problem Solving",
+            "Front-end Development",
+            "Software Development",
+            "Programming",
+            "Document Management",
+            "JavaScript",
+            "CSS3",
+            "Leadership",
+            "Systems and Server Administration",
+            "Microsoft Visual Studio Code",
+            "Analytical and Algorithmic",
+            "Project Management and Documentation",
+            "HTML5",
+            "Agile Methodologies",
+            "Project Planning",
+            "Analytical and Research Skills"
+        ],
+        links: {
+            github: "https://github.com/jherraizsoler/portfolio",
+            linkedin: "https://lnkd.in/p/d87i8hnh"
+        }
+    }
+ };
+
+
 
 // 2. Referencias a los elementos del DOM (se agrega el visor de imágenes)
 const articlesContainer = document.getElementById("contenedorArticulos");
