@@ -705,7 +705,6 @@ const projectsData = {
     },
   },
   
-  
   "17_es": {
         title: "Proyecto Frontend Porfolio Jorge Herraiz Soler",
         content: "Estoy realizando mi porfolio desde cero, estoy materializando mis ideas de aquel porfolio que me gustaría tener, cuáles son las primeras sensaciones y cuidar el contenido. Quiero crear un porfolio que demuestre quien soy, que es lo que hago, cuál es mi iniciativa, mi camino, cuáles son mis valores, principios y el cuidado de los detalles. Me gusta mostrar en el porfolio, el disfrute y estudio constante que estoy desarrollando desde hace 3 años focalizándome en el sector IT. Tecnologías utilizadas: - HTML5 - CSS3 - JavaScript - Shoelace-style para algunos componentes para sección Académica y Experiencia Aprendizaje, elementos o componentes nuevos: - Nav estatico, componente blanco izquierdo con botones de guia por el portafolio (clip-path) - Footer Statico (z-index) - Circulo radius filtro blur cursor, Diseño y UX/UI - Cambio de Idioma Boton / Componente modalidad traductor Ingles y Español - Modo Dark / Light Boton / Componente modalidad Visibilidad / colores - PopUps / Ventanas emergentes Mostrar mas información sobre los proyectos - Sección Académico mejorado - Sección Experiencia mejorado - Sección Proyectos mejorado - Sección Cursos y Certificaciones actualizado - Sección Tecnologías implementado y mejorado - Sección Recomendaciones implementado y mejorado Ultima actualización 19/09/2025 @jherraizsoler",
@@ -758,6 +757,459 @@ const projectsData = {
             github: "https://github.com/jherraizsoler/portfolio",
             linkedin: "https://lnkd.in/p/d87i8hnh"
         }
+  },
+  "18_es": {
+    title: "Proyecto Backend Sistemas de personas con Hibernate",
+    content: `
+        <h3>Descripción del Proyecto</h3>
+        <p>Desarrollé un proyecto backend sencillo para dominar las operaciones **CRUD** (Crear, Leer, Actualizar, Borrar) utilizando **Hibernate ORM** y **Java**. Este sistema de gestión de personas se conecta a una base de datos **MySQL** para gestionar la persistencia de datos de manera eficiente.</p>
+        
+        <h4>Características Clave</h4>
+        <ul>
+            <li>**Mapeo Objeto-Relacional (ORM) con Hibernate:** Simplifica la interacción con la base de datos al mapear objetos de Java (Persona) a tablas de MySQL, reduciendo el código boilerplate JDBC.</li>
+            <li>**Gestión de Dependencias con Maven:** El **pom.xml** está configurado para gestionar de manera centralizada las dependencias de Hibernate, MySQL y Log4j2.</li>
+            <li>**Estructura de la Base de Datos:** Se diseñó un esquema simple y robusto con una tabla persona para almacenar información como nombre, apellido, email, teléfono y saldo.</li>
+            <li>**Modularidad y Organización:** El código está estructurado en capas (**DAO**, **Modelo**, **Test**) para una mejor separación de responsabilidades y mantenibilidad.</li>
+        </ul>
+        <p>Este proyecto fue una excelente oportunidad para profundizar en la persistencia de datos con un ORM líder en la industria. Estoy buscando activamente roles que me permitan aplicar y expandir mis conocimientos en el desarrollo de software y la gestión de bases de datos.</p>
+    `,
+    images: ["Media/Proyectos/Proyecto18/imagenPrincipal.jpeg"],
+    skills: [
+        "Hibernate",
+        "MySQL",
+        "Programación",
+        "Maven",
+        "Java",
+        "Gestión y documentación de proyectos",
+        "Metodologías ágiles",
+        "Planificación de proyectos",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/personas_hibernate",
+        linkedin: "https://lnkd.in/p/dyHdgtQi"
+    }
+  },
+  "19_es": {
+    title: "Proyecto FullStack App Web Sistemas de Alumnos",
+    content: `
+        <h3>Sistema de Gestión de Alumnos Full-Stack</h3>
+        <p>Desarrollé un sistema **full-stack** de gestión de alumnos, implementando una solución **CRUD** completa para la administración de datos. Este proyecto me permitió profundizar en la creación de aplicaciones web empresariales robustas, conectando el backend con una interfaz de usuario dinámica y responsiva.</p>
+
+        <h4>Tecnologías Clave</h4>
+        <p><strong>Backend:</strong> Construido con **Java**, utilizando **Maven** para la gestión del proyecto. Empleé **Jakarta EE** para las especificaciones empresariales y **Hibernate ORM** para la capa de persistencia, facilitando la interacción con la base de datos **MySQL**. El despliegue se realizó en el servidor de aplicaciones **GlassFish**, demostrando mi conocimiento en entornos de producción. El sistema de logging se gestionó con **Apache Log4j**.</p>
+        <p><strong>Frontend:</strong> La interfaz de usuario fue diseñada con **JSP**, y se estilizó completamente con **Tailwind CSS**, lo que me permitió crear un diseño limpio y moderno de forma ágil.</p>
+
+        <h4>Funcionalidades</h4>
+        <ul>
+            <li>Creación, lectura, actualización y eliminación de registros de alumnos.</li>
+            <li>Conexión y gestión eficiente de datos a través de un enfoque de mapeo objeto-relacional.</li>
+            <li>Despliegue y empaquetado de la aplicación en formato **.war**.</li>
+        </ul>
+        <p>Este proyecto demuestra mi capacidad para desarrollar aplicaciones web de extremo a extremo, manejando tanto la lógica del servidor como el diseño de la interfaz de usuario, y asegurando una gestión de datos eficiente y organizada.</p>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto19/imagenPrincipal.jpeg",
+              "Media/Proyectos/Proyecto19/Pantalla_Inicio.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_ListadoAlumnos.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_ModificarAlumno.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_AgregarAlumno.jpg"
+    ],
+    skills: [
+        "Jakarta EE",
+        "Hibernate",
+        "MySQL",
+        "Programación",
+        "Log4j",
+        "Maven",
+        "Java",
+        "Gestión y documentación de proyectos",
+        "HTML5",
+        "JSP",
+        "Metodologías ágiles",
+        "Planificación de proyectos",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/AlumnosWebHibernateJPA_fullstack",
+        linkedin: "https://lnkd.in/p/dW4Zw3Ft"
+    }
+  },
+  "20_es": {
+    title: "Proyecto FullStack App Web Sistemas de Clientes",
+    content: `
+        <h3>Descripción del Proyecto</h3>
+        <p>El proyecto "Control de Clientes" es una solución web full-stack integral y robusta para la gestión de la información de clientes. Está diseñada para centralizar y optimizar todas las operaciones CRUD (Crear, Leer, Actualizar, Borrar). Más que una simple base de datos, se enfoca en la seguridad de la información y una experiencia de usuario sobresaliente. Una de sus características clave es la internacionalización, que permite que la aplicación sea utilizada en diferentes países e idiomas, incluyendo español (ES), inglés de Estados Unidos (US) e Irlanda (IE), francés (FR), italiano (IT), alemán (DE), chino (ZH_CN) y japonés (JA).</p>
+        <p>El backend, el núcleo del sistema, se basa en el framework de Java Spring Boot, que facilita un desarrollo ágil y una arquitectura escalable. Para la persistencia de datos, se utiliza Spring Data JPA y la base de datos relacional MySQL. La seguridad es una prioridad, y Spring Security implementa un control de acceso granular basado en roles para proteger la confidencialidad de los datos. Además, se integran Lombok para reducir el código repetitivo y Spring Validation para asegurar la integridad de los datos de entrada. Cifrado de las contraseña mediante jbcrypt</p>
+        <p>El frontend, una interfaz moderna y completamente adaptable, se construye sobre Thymeleaf, un motor de plantillas del lado del servidor. El diseño responsivo está garantizado por Bootstrap 5 con su enfoque mobile-first, asegurando una visualización perfecta en cualquier dispositivo. Para mejorar la estética, se integra Font Awesome, que proporciona una vasta colección de íconos. La gestión de estas librerías externas se simplifica con Webjars. La combinación de estas tecnologías resulta en una experiencia de usuario fluida, intuitiva y visualmente agradable, demostrando la alta calidad de una solución full-stack moderna.</p>
+    `,
+    images: [
+             "Media/Proyectos/Proyecto20/imagenPrincipal.jpeg",
+             "Media/Proyectos/Proyecto20/Pantalla_Login.jpg",
+             "Media/Proyectos/Proyecto20/Pantalla_Principal.jpg",
+             "Media/Proyectos/Proyecto20/Pantalla_EditarPersona.jpg"
+    ],
+    skills: [
+        "Diseño de experiencia de usuario (UX) y interfaz de usuario (UI)",
+        "Spring Framework",
+        "MySQL",
+        "Thymeleaf",
+        "Programación",
+        "Maven",
+        "JPA",
+        "Administración de sistemas y servidores",
+        "Spring Boot",
+        "Analítico y algorítmico",
+        "Gestión y documentación de proyectos",
+        "Metodologías ágiles",
+        "Planificación de proyectos",
+        "jbcrypt",
+        "Apache Netbeans IDE",
+        "Capacidad de análisis e investigación"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/ControlClientes",
+        linkedin: "https://lnkd.in/p/dJBB44-M"
+    }
+  },
+  "21_es": {
+    title: "Proyecto Fullstack App Web Bolsa empleo Validación Vacantes",
+    content: `
+        <h3>Desarrollo fullstack - Proyecto de Formulario Web con Jakarta EE Facelets</h3>
+        <p>¡Estoy entusiasmado de compartir mi proyecto personal de desarrollo fullstack! Es un **Formulario de Bolsa de Trabajo** que construí para consolidar mis habilidades en el ecosistema **Jakarta EE** y la programación orientada a componentes. Esta aplicación web completa permite a los usuarios enviar información de vacantes con validación de datos en el cliente y el servidor, lo que garantiza la integridad de la información.</p>
+        <p>El frontend fue creado con **Jakarta Server Faces (JSF)** y **Facelets**, permitiéndome diseñar una interfaz de usuario modular y robusta. En el backend, el proyecto utiliza **Java** para la lógica de negocio, gestionando los datos de forma eficiente. Todo el proyecto sigue la estructura estándar de **Maven**, facilitando la gestión de dependencias y el ciclo de vida de la construcción, y está configurado para ser desplegado en **Glassfish Server 8.0.0**.</p>
+        <p>La opción correcta la podéis encontrar en las imágenes de este proyecto para poder realizar pruebas.</p>
+        <p>Este proyecto ha sido una oportunidad para aplicar y demostrar mi capacidad para construir aplicaciones web empresariales, implementar validaciones de datos y gestionar un proyecto con un stack de tecnologías maduras y robustas. ¡Gracias por leer!</p>
+    `,
+    images: [
+             "Media/Proyectos/Proyecto21/imagenPrincipal.jpeg",
+             "Media/Proyectos/Proyecto21/Pantalla_Principal_datosIncorrectos.jpg",
+             "Media/Proyectos/Proyecto21/Pantalla_Feedback_Negativo.jpg",
+             "Media/Proyectos/Proyecto21/Pantalla_Principal_Feedback_Positivo_DatosCorrectos.jpg"
+    ],
+    skills: [
+        "Jakarta EE",
+        "JavaServer Faces (JSF)",
+        "Programación",
+        "Maven",
+        "Facelets",
+        "Java",
+        "Gestión y documentación de proyectos",
+        "HTML5",
+        "Metodologías ágiles",
+        "Planificación de proyectos",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/vacantesBolsaTrabajo_FaceletsJSF_frontend",
+        linkedin: "https://lnkd.in/p/du34AJJw"
+    }
+  },
+  "22_es": {
+    title: "Proyecto backend Servidor PersonalHub",
+    content: `
+        <h3>PersonalHub: Servidor Backend</h3>
+        <p>Este proyecto es el pilar fundamental del lado del servidor para una aplicación **full-stack**. PersonalHub ha sido diseñado como un backend robusto, escalable y, sobre todo, seguro, con el objetivo de proporcionar una **API RESTful** completa que gestione de manera eficiente toda la lógica de negocio y la persistencia de datos. Sirve como el corazón de una plataforma donde la gestión de usuarios y la seguridad de la información son la máxima prioridad.</p>
+        <p>La arquitectura del servidor se basa en un stack tecnológico moderno y ampliamente adoptado. Utiliza **Node.js** como entorno de ejecución y **Express.js** como framework principal para la creación de rutas y middleware. Esta combinación permite un desarrollo ágil, de alto rendimiento y asíncrono, ideal para manejar múltiples peticiones de manera concurrente.</p>
+        <p>Para la gestión de datos, se ha optado por **MongoDB**, una base de datos **NoSQL** flexible y orientada a documentos, perfecta para modelos de datos dinámicos. La interacción con esta base de datos se realiza a través de **Mongoose**, una potente librería de modelado de objetos (**ODM**) que simplifica las operaciones de **CRUD** y garantiza la consistencia de los datos mediante esquemas.</p>
+        <p>La seguridad es clave. PersonalHub implementa un sistema de autenticación basado en **JSON Web Tokens (JWT)**. Estos tokens, firmados digitalmente, permiten la comunicación segura y sin estado entre cliente y servidor, protegiendo rutas privadas del acceso no autorizado. Además, las contraseñas no se almacenan en texto plano; en su lugar, se usa el algoritmo de hash **jBcrypt** para encriptarlas, garantizando que en caso de una brecha, las credenciales no puedan ser recuperadas.</p>
+        <p>PersonalHub es un servidor backend robusto y seguro para aplicaciones full-stack, diseñado con una arquitectura que facilita futuras expansiones. Proporciona toda la funcionalidad necesaria y está listo para ser integrado.</p>
+    `,
+    images: ["Media/Proyectos/Proyecto22/imagenPrincipal.jpeg"],
+    skills: [
+        "MongoDB",
+        "Programación",
+        "Maven",
+        "JSON",
+        "JavaScript",
+        "JSON Web Token (JWT)",
+        "Administración de sistemas y servidores",
+        "Analítico y algorítmico",
+        "Gestión y documentación de proyectos",
+        "Metodologías ágiles",
+        "Node.js",
+        "Planificación de proyectos",
+        "jbcrypt",
+        "Capacidad de análisis e investigación"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/backend-auth",
+        linkedin: "https://lnkd.in/p/dM7-zKZS"
+    }
+  },
+  "23_es": {
+    title: "Proyecto multiplataforma final de grado superior DAM FPGS IFC302 TFG",
+    content: `
+        <h3>CofradeDome</h3>
+        <p>La aplicación "CofradeDome" surge de manera ficticia como respuesta a la solicitud de una cofradía que requiere una solución digital para optimizar la gestión de los cofrades asistentes de la sección de instrumentos. Su objetivo principal es mejorar el proceso de registro y control de asistencia mediante el uso de Códigos QR en los ensayos.</p>
+        <p>La aplicación está diseñada para dispositivos Android, permitiendo a los responsables de la cofradía administrar de manera sencilla la asistencia a los ensayos y gestionar los permisos de ciertos miembros dentro de la aplicación.</p>
+        
+        <h4>Tecnologías / Herramientas utilizadas</h4>
+        
+        <h5>Lenguajes de programación:</h5>
+        <ul>
+            <li>**Aplicación:** Kotlin</li>
+            <li>**Servidor:** Python</li>
+        </ul>
+        
+        <h5>IDE:</h5>
+        <ul>
+            <li>Android Studio 2024.2.2</li>
+            <li>Runtime version: 21.0.4</li>
+            <li>PlantUML integration (7.11.2)</li>
+        </ul>
+        
+        <h5>Librerías:</h5>
+        <ul>
+            <li>**Login (Cifrar contraseña):** jbcrypt de org.mindrot</li>
+            <li>**Login (Tecnologías biométricas):** biometric de androidx.biometric</li>
+            <li>**Login (Cifrar descifrar archivo interno aplicación email):** android.security.keystore.*, android.security.keystore.KeyProperties.*, javax.crypto.* y java.security.*, android.util.Base64</li>
+            <li>**ClienteSSL:** javax.net.ssl.*, java.security.*</li>
+            <li>**MiExecutorTask:** java.util.concurrent.Executor, java.util.concurrent.Executors</li>
+            <li>**Listar asistencias (Lector QR):** zxing-android-embedded de com.journeyapps</li>
+            <li>**GestorCofrades (Generador QR):** core de com.google.zxing</li>
+            <li>**GestorCofrades (Generador Tarjetas PDF):** itext-core de com.itextpdf, layout de com.itextpdf</li>
+        </ul>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto23/imagenPrincipal.png"
+    ],
+    skills: [
+        "Diseño de experiencia de usuario (UX) y interfaz de usuario (UI)",
+        "Executor",
+        "Resolución de problemas",
+        "Python",
+        "Desarrollo de software",
+        "MySQL",
+        "Programación",
+        "Maven",
+        "Certificaciones SSL",
+        "Ubuntu",
+        "Android",
+        "biometric",
+        "Liderazgo",
+        "Administración de sistemas y servidores",
+        "zxing",
+        "Analítico y algorítmico",
+        "Gestión y documentación de proyectos",
+        "Seguridad de la capa de transporte (TLS)",
+        "Metodologías ágiles",
+        "Kotlin",
+        "Modelo-Vista-Controlador (MVC)",
+        "Planificación de proyectos",
+        "jbcrypt",
+        "Diseño y administración de bases de datos",
+        "Capacidad de análisis e investigación"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/AppCofradeDome",
+        linkedin: "https://lnkd.in/p/dHTFAcfE"
+    }
+  },
+  "24_es": {
+    title: "Proyecto Software App Desktop WPF Editor de textos",
+    content: `
+        <h3>Proyecto: Editor de Texto WPF</h3>
+        <p>Desarrollé una aplicación de escritorio completa para un editor de texto utilizando **C#** y el framework **WPF** (Windows Presentation Foundation). Este proyecto se centró en la creación de una interfaz de usuario moderna y adaptable, aprovechando el potencial de WPF para la separación de la lógica de negocio y la interfaz.</p>
+        
+        <h4>Funcionalidades Clave:</h4>
+        <ul>
+            <li>**Diseño de UI Avanzado:** Creación de una interfaz de usuario altamente personalizable con **XAML**, que permite un diseño flexible y escalable.</li>
+            <li>**Gestión de Archivos:** Implementación de menús intuitivos para crear, abrir, guardar y guardar como archivos de texto.</li>
+            <li>**Editor de Texto:** Un área de trabajo completa con funcionalidades de edición de texto.</li>
+            <li>**Binding de Datos:** Utilización del concepto de **data binding** para conectar dinámicamente la UI a los datos y la lógica de negocio.</li>
+        </ul>
+        
+        <h4>Tecnologías Utilizadas:</h4>
+        <ul>
+            <li>**Lenguaje:** C#</li>
+            <li>**Framework:** WPF (.NET 9.0.0)</li>
+            <li>**IDE:** Visual Studio</li>
+            <li>**Tecnologías de UI:** XAML, Binding de Datos</li>
+            <li>**Patrones de Diseño:** MVVM (Model-View-ViewModel)</li>
+        </ul>
+        <p>Este proyecto me permitió consolidar mis conocimientos en el desarrollo de aplicaciones con **WPF**, aplicando patrones de diseño para lograr una arquitectura de código más limpia y mantenible. Demuestra mi capacidad para trabajar con tecnologías de vanguardia para crear experiencias de usuario enriquecidas y funcionales.</p>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto24/imagenPrincipal.jpg",
+              "Media/Proyectos/Proyecto24/imagenPrincipal.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_date.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Archivo.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Ayuda.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Ayuda_Ventana.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formato_ColorFondo.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formato_ColorTexto.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formulario.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Modificada.jpg"
+    ],
+    skills: [
+        "C#",
+        ".NET Framework"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WPF_Menus_Archivos_Custom_EditorTexto",
+        linkedin: "https://lnkd.in/p/dAihRfHX"
+    }
+  },
+  "25_es": {
+    title: "Proyecto app Desktop WF_SistemaProyectos",
+    content: ` 
+            <h3>Proyecto: WF_SistemaProyectos</h3>
+            <p>Lideré el análisis, desarrollo y documentación de ProyectosDome, una aplicación de escritorio para S.O. Windows diseñada para optimizar la gestión de proyectos, tareas y clientes. Esta solución fue concebida para una empresa con el fin de mejorar su eficiencia operativa y asegurar la integridad de los datos.</p><h4>Objetivos del Proyecto:</h4><ul><li><b>Persistencia y Gestión de Datos:</b> Diseño e implementación de un sistema robusto para la gestión y persistencia de datos, garantizando la integridad referencial y la fiabilidad de la información.</li><li><b>Validación de Datos:</b> Desarrollo de lógicas de validación para asegurar que los datos insertados en la base de datos cumplan con los criterios de negocio definidos.</li><li><b>Diseño de la Interfaz:</b> Creación de una interfaz de usuario intuitiva en C# con Windows Forms, facilitando la interacción del usuario con la aplicación.</li><li><b>Generación de Documentación:</b> Elaboración de una memoria técnica completa, detallando la arquitectura de la aplicación, el flujo de datos y las decisiones de diseño.</li></ul><h4>Tecnologías y Metodologías:</h4><ul><li><b>Lenguaje de Programación:</b> C#</li><li><b>Framework:</b> .NET, Windows Forms</li><li><b>IDE:</b> Visual Studio</li><li><b>Base de Datos:</b> SQL Server</li><li><b>Gestión de Datos:</b> Modelado, inserción y recuperación de datos para la persistencia en la base de datos.</li><li><b>Ingeniería de Software:</b> Análisis de requisitos, diseño de la solución y desarrollo.</li></ul><p>Este proyecto me permitió aplicar mis conocimientos en desarrollo de software de ciclo completo, desde el análisis y la arquitectura de la solución hasta la implementación y documentación final, con un enfoque en la calidad del código y la eficiencia del sistema.</p>
+      `,
+    images: ["Media/Proyectos/Proyecto25/imagenPrincipal.jpg"],
+    skills: [
+        "C#",
+        ".NET Framework",
+        "SQL"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WF_SistemaProyectos",
+        linkedin: "https://lnkd.in/p/dcfiPhn9"
+    }
+  },
+  "26_es": {
+    title: "Proyecto Software app Editor de textos WF",
+    content: `
+        <h3>Proyecto: Editor de Texto WF</h3>
+        <p>Desarrollé una aplicación de escritorio completa en **C#** utilizando el framework **Windows Forms** y **.NET 9.0.0**. Este proyecto es un editor de texto funcional que demuestra mis habilidades en el desarrollo de software de escritorio y la gestión del ciclo de vida de una aplicación.</p>
+        
+        <h4>Funcionalidades Clave:</h4>
+        <ul>
+            <li>**Gestión de Archivos:** Implementación de menús intuitivos para crear, abrir, guardar y guardar como archivos de texto.</li>
+            <li>**Editor:** Un área de trabajo completa para la edición de texto.</li>
+            <li>**Información Dinámica:** Integración de un reloj en tiempo real y la visualización de las coordenadas del cursor (línea y columna) en la interfaz de usuario.</li>
+        </ul>
+        
+        <h4>Tecnologías Utilizadas:</h4>
+        <ul>
+            <li>**Lenguaje:** C#</li>
+            <li>**Framework:** Windows Forms</li>
+            <li>**Plataforma:** .NET 9.0.0</li>
+            <li>**Herramientas:** Visual Studio</li>
+        </ul>
+        
+        <p>Este proyecto me permitió consolidar mis conocimientos en **programación orientada a objetos (POO)**, manejo de eventos y gestión del sistema de archivos, aplicando buenas prácticas de desarrollo.</p>
+    `,
+    images: [
+            "Media/Proyectos/Proyecto26/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto26/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Ayuda.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Menu_Archivo.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Menu_Ayuda.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Menu_Formato_ColorFondo.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Menu_Formato_ColorTexto.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_Menu_Formulario.jpg",
+            "Media/Proyectos/Proyecto26/Pantalla_Principal_modificada.jpg"
+    ],
+    skills: [
+        ".NET Framework",
+        "Microsoft Visual Studio Code",
+        "C#"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WF_Menus_Archivos_Custom_EditorTexto",
+        linkedin: "https://lnkd.in/p/digKzB6G"
+    }
+  },
+  "27_es": {
+    title: "App Biblioteca – Gestión personal de libros en Android",
+    content: `
+        <h3>App Biblioteca - Gestión personal de libros en Android</h3>
+        <p>App Biblioteca es una aplicación Android desarrollada en **Java 15** que permite a los usuarios gestionar y organizar su biblioteca personal de forma sencilla e intuitiva. Con ella puedes registrar libros, anotar tus lecturas, realizar valoraciones, guardar notas y llevar un control de los préstamos.</p>
+        <p>Su diseño modular y la integración de librerías modernas de Android garantizan una experiencia fluida y adaptable. Además, cuenta con **tests unitarios** implementados con **JUnit** y **Mockito**, lo que asegura la fiabilidad y el correcto funcionamiento de las funcionalidades principales.</p>
+        
+        <h4>Características principales:</h4>
+        <ul>
+            <li>Registro de libros con título, autor, género, idioma y formato.</li>
+            <li>Gestión de lecturas: fechas de inicio y finalización.</li>
+            <li>Valoración y notas personales para cada libro.</li>
+            <li>Control de préstamos a otras personas.</li>
+        </ul>
+        
+        <h4>Tecnologías utilizadas:</h4>
+        <ul>
+            <li>**Lenguaje:** Java 15</li>
+            <li>**Framework AndroidX** y **Material Design** para la interfaz.</li>
+            <li>**Gradle** (AGP 8.6.0) para la gestión del proyecto.</li>
+            <li>**JUnit**, **Espresso** y **Mockito** para las pruebas.</li>
+        </ul>
+        
+        <p>Este proyecto refleja mis habilidades en desarrollo Android, organización de código limpio y pruebas de software. Además, demuestra mi capacidad para llevar una aplicación desde el diseño inicial hasta un producto final funcional, escalable y fácil de mantener.</p>
+    `,
+    images: [
+            "Media/Proyectos/Proyecto27/imagenPrincipal.jpeg",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal.png",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal_Menu.png",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal_Opciones.png",
+            "Media/Proyectos/Proyecto27/Dialogo_ModificarLibro.png",
+            "Media/Proyectos/Proyecto27/Opcion_OrdenarPor.png",
+            "Media/Proyectos/Proyecto27/OpcionEliminar.png",
+            "Media/Proyectos/Proyecto27/Pantalla_DarAltaLibro.png"    
+    ],
+    skills: [
+        "Android",
+        "Java",
+        "JUnit",
+        "Mockito",
+        "Gradle",
+        "Material Design",
+        "AndroidX",
+        "Espresso",
+        "Pruebas de software",
+        "Desarrollo de software"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/appbiblioteca",
+        linkedin: "https://lnkd.in/p/diywaF5j"
+    }
+  },
+  "28_es": {
+    title: "Documentación completa de la red de una empresa (Ficticia) y simulación con Cisco Packet Tracer",
+    content: `
+        <h3>Documentación de la red y simulación con Cisco Packet Tracer</h3>
+        <p>Este proyecto consistió en la documentación completa, análisis, estudio, toma de decisiones y desarrollo de un caso ficticio de un ticket de un cliente con un problema de red. Se analizó la situación, se tomaron decisiones de diseño y se desarrolló una red de empresa ficticia, simulada con **Cisco Packet Tracer**. El proyecto completo, con toda la información técnica, está detallado en un documento PDF adjunto.</p>
+    `,
+    images: [
+            "Media/Proyectos/Proyecto28/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto28/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto28/2.jpg",
+            "Media/Proyectos/Proyecto28/3.jpg",
+            "Media/Proyectos/Proyecto28/4.jpg",
+            "Media/Proyectos/Proyecto28/5.jpg",
+            "Media/Proyectos/Proyecto28/6.jpg",
+            "Media/Proyectos/Proyecto28/7.jpg",
+            "Media/Proyectos/Proyecto28/8.jpg",
+            "Media/Proyectos/Proyecto28/9.jpg",
+            "Media/Proyectos/Proyecto28/10.jpg",
+            "Media/Proyectos/Proyecto28/11.jpg",
+            "Media/Proyectos/Proyecto28/12.jpg",
+            "Media/Proyectos/Proyecto28/13.jpg",
+            "Media/Proyectos/Proyecto28/14.jpg",
+            "Media/Proyectos/Proyecto28/15.jpg",
+            "Media/Proyectos/Proyecto28/16.jpg",
+            "Media/Proyectos/Proyecto28/17.jpg",
+            "Media/Proyectos/Proyecto28/18.jpg",
+            "Media/Proyectos/Proyecto28/19.jpg"  
+    ],
+    skills: [
+        "Resolución de problemas",
+        "Gestión y resolución de incidencias",
+        "Programación",
+        "Gestión documental",
+        "Maven",
+        "Liderazgo",
+        "Administración de sistemas y servidores",
+        "Gestión de redes",
+        "Analítico y algorítmico",
+        "Gestión y documentación de proyectos",
+        "Metodologías ágiles",
+        "Planificación de proyectos",
+        "Capacidad de análisis e investigación"
+    ],
+    links: {
+        linkedin: "https://lnkd.in/p/d_p9d42i"
+    }
   },
 
   // Ingles
@@ -1468,7 +1920,7 @@ const projectsData = {
       linkedin: "https://lnkd.in/p/dxk_Axrc",
     },
   },
-   "17_en": {
+  "17_en": {
         title: "Frontend Project Portfolio Jorge Herraiz Soler",
         content: "I am building my portfolio from scratch, materializing my ideas of the portfolio I would like to have, what the first impressions are, and taking care of the content. I want to create a portfolio that shows who I am, what I do, what my initiative is, my path, what my values are, principles, and attention to detail. I like to show in the portfolio the enjoyment and constant study that I have been developing for 3 years, focusing on the IT sector. Technologies used: - HTML5 - CSS3 - JavaScript - Shoelace-style for some components for Academic and Experience sections New learnings, elements or components: - Static Nav, white left-side component with guide buttons for the portfolio (clip-path) - Static Footer (z-index) - Circle radius blur filter cursor, Design and UX/UI - Language Change Button / Translator mode component English and Spanish - Dark / Light Mode Button / Visibility / color mode component - PopUps / Pop-up windows Show more information about the projects - Improved Academic section - Improved Experience section - Improved Projects section - Updated Courses and Certifications section - Implemented and improved Technologies section - Implemented and improved Recommendations section Last updated 19/09/2025 @jherraizsoler",
         images: [
@@ -1519,7 +1971,452 @@ const projectsData = {
             github: "https://github.com/jherraizsoler/portfolio",
             linkedin: "https://lnkd.in/p/d87i8hnh"
         }
+  },
+  "18_en": {
+    title: "Backend Project People Systems with Hibernate",
+    content: `
+        <h3>Project Description</h3>
+        <p>I developed a simple backend project to master **CRUD** (Create, Read, Update, Delete) operations using **Hibernate ORM** and **Java**. This person management system connects to a **MySQL** database to efficiently manage data persistence.</p>
+        
+        <h4>Key Features</h4>
+        <ul>
+            <li>**Object-Relational Mapping (ORM) with Hibernate:** Simplifies the interaction with the database by mapping Java objects (Person) to MySQL tables, reducing boilerplate JDBC code.</li>
+            <li>**Dependency Management with Maven:** The **pom.xml** is configured to centrally manage Hibernate, MySQL, and Log4j2 dependencies.</li>
+            <li>**Database Structure:** A simple and robust schema was designed with a person table to store information such as name, last name, email, phone, and balance.</li>
+            <li>**Modularity and Organization:** The code is structured in layers (**DAO**, **Model**, **Test**) for better separation of responsibilities and maintainability.</li>
+        </ul>
+        <p>This project was an excellent opportunity to deepen my knowledge of data persistence with an industry-leading ORM. I am actively seeking roles that allow me to apply and expand my knowledge in software development and database management.</p>
+    `,
+    images: ["Media/Proyectos/Proyecto18/imagenPrincipal.jpeg"],
+    skills: [
+        "Hibernate",
+        "MySQL",
+        "Programming",
+        "Maven",
+        "Java",
+        "Project Management and Documentation",
+        "Agile Methodologies",
+        "Project Planning",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/personas_hibernate",
+        linkedin: "https://lnkd.in/p/d4Y8aHQu"
     }
+  },
+  "19_en": {
+    title: "FullStack Web App Project Student Systems",
+    content: `
+        <h3>FullStack Web App Project Student Systems</h3>
+        <p>I developed a **full-stack** student management system, implementing a complete **CRUD** solution for data administration. This project allowed me to deepen my skills in creating robust enterprise web applications, connecting the backend with a dynamic and responsive user interface.</p>
+
+        <h4>Key Technologies</h4>
+        <p><strong>Backend:</strong> Built with **Java**, using **Maven** for project management. I used **Jakarta EE** for enterprise specifications and **Hibernate ORM** for the persistence layer, facilitating interaction with the **MySQL** database. Deployment was carried out on the **GlassFish** application server, demonstrating my knowledge of production environments. The logging system was managed with **Apache Log4j**.</p>
+        <p><strong>Frontend:</strong> The user interface was designed with **JSP** and styled entirely with **Tailwind CSS**, which allowed me to create a clean and modern design in an agile way.</p>
+
+        <h4>Functionalities</h4>
+        <ul>
+            <li>Creation, reading, updating, and deletion of student records.</li>
+            <li>Efficient data connection and management through an object-relational mapping approach.</li>
+            <li>Deployment and packaging of the application in **.war** format.</li>
+        </ul>
+        <p>This project demonstrates my ability to develop end-to-end web applications, handling both server logic and user interface design, and ensuring efficient and organized data management.</p>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto19/imagenPrincipal.jpeg",
+              "Media/Proyectos/Proyecto19/Pantalla_Inicio.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_ListadoAlumnos.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_ModificarAlumno.jpg",
+              "Media/Proyectos/Proyecto19/Pantalla_AgregarAlumno.jpg"
+    ],
+    skills: [
+        "Jakarta EE",
+        "Hibernate",
+        "MySQL",
+        "Programming",
+        "Log4j",
+        "Maven",
+        "Java",
+        "Project Management and Documentation",
+        "HTML5",
+        "JSP",
+        "Agile Methodologies",
+        "Project Planning",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/AlumnosWebHibernateJPA_fullstack",
+        linkedin: "https://lnkd.in/p/dW4Zw3Ft"
+    }
+  },
+  "20_en": {
+    title: "FullStack Web App Project Customer Systems",
+    content: `
+        <h3>Project Description</h3>
+        <p>The "Customer Control" project is a comprehensive and robust full-stack web solution for managing customer information. It is designed to centralize and optimize all **CRUD** (Create, Read, Update, Delete) operations. More than a simple database, it focuses on information security and an outstanding user experience. One of its key features is internationalization, which allows the application to be used in different countries and languages, including Spanish (ES), US English (US) and Irish (IE), French (FR), Italian (IT), German (DE), Chinese (ZH_CN), and Japanese (JA).</p>
+        <p>The backend, the system's core, is based on the **Java Spring Boot** framework, which facilitates agile development and a scalable architecture. For data persistence, **Spring Data JPA** and the **MySQL** relational database are used. Security is a priority, and **Spring Security** implements granular role-based access control to protect data confidentiality. Additionally, **Lombok** is integrated to reduce repetitive code and **Spring Validation** to ensure the integrity of input data. Passwords are encrypted using **jbcrypt**.</p>
+        <p>The frontend, a modern and fully adaptable interface, is built on **Thymeleaf**, a server-side template engine. The responsive design is guaranteed by **Bootstrap 5** with its mobile-first approach, ensuring a perfect display on any device. To enhance the aesthetics, **Font Awesome** is integrated, which provides a vast collection of icons. The management of these external libraries is simplified with **Webjars**. The combination of these technologies results in a fluid, intuitive, and visually pleasing user experience, demonstrating the high quality of a modern full-stack solution.</p>
+    `,
+    images: [
+             "Media/Proyectos/Proyecto20/imagenPrincipal.jpeg",
+             "Media/Proyectos/Proyecto20/Pantalla_Login.jpg",
+             "Media/Proyectos/Proyecto20/Pantalla_Principal.jpg",
+             "Media/Proyectos/Proyecto20/Pantalla_EditarPersona.jpg"
+    ],
+    skills: [
+        "User Experience (UX) and User Interface (UI) Design",
+        "Spring Framework",
+        "MySQL",
+        "Thymeleaf",
+        "Programming",
+        "Maven",
+        "JPA",
+        "Systems and Server Administration",
+        "Spring Boot",
+        "Analytical and Algorithmic",
+        "Project Management and Documentation",
+        "Agile Methodologies",
+        "Project Planning",
+        "jbcrypt",
+        "Apache Netbeans IDE",
+        "Analytical and Research Skills"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/ControlClientes",
+        linkedin: "https://lnkd.in/p/dJBB44-M"
+    }
+  },
+
+  "21_en": {
+    title: "Fullstack Web App Project Job Board Validation Vacancies",
+    content: `
+        <h3>Full-Stack Development - Web Form Project with Jakarta EE Facelets</h3>
+        <p>I'm excited to share my personal full-stack development project! It's a **Job Board Form** that I built to solidify my skills in the **Jakarta EE** ecosystem and component-oriented programming. This complete web application allows users to submit vacancy information with both client- and server-side data validation, ensuring data integrity.</p>
+        <p>The frontend was created with **Jakarta Server Faces (JSF)** and **Facelets**, allowing me to design a modular and robust user interface. In the backend, the project uses **Java** for the business logic, managing data efficiently. The entire project follows the standard **Maven** structure, facilitating dependency management and the build lifecycle, and is configured to be deployed on **Glassfish Server 8.0.0**.</p>
+        <p>The correct option can be found in the images of this project for testing purposes.</p>
+        <p>This project has been an opportunity to apply and demonstrate my ability to build enterprise web applications, implement data validations, and manage a project with a mature and robust technology stack. Thanks for reading!</p>
+    `,
+    images: [
+             "Media/Proyectos/Proyecto21/imagenPrincipal.jpeg",
+             "Media/Proyectos/Proyecto21/Pantalla_Principal_datosIncorrectos.jpg",
+             "Media/Proyectos/Proyecto21/Pantalla_Feedback_Negativo.jpg",
+             "Media/Proyectos/Proyecto21/Pantalla_Principal_Feedback_Positivo_DatosCorrectos.jpg"
+    ],
+    skills: [
+        "Jakarta EE",
+        "JavaServer Faces (JSF)",
+        "Programming",
+        "Maven",
+        "Facelets",
+        "Java",
+        "Project Management and Documentation",
+        "HTML5",
+        "Agile Methodologies",
+        "Project Planning",
+        "Apache Netbeans IDE"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/vacantesBolsaTrabajo_FaceletsJSF_frontend",
+        linkedin: "https://lnkd.in/p/du34AJJw"
+    }
+  },
+  "22_en": {
+    title: "PersonalHub Server Backend Project",
+    content: `
+        <h3>PersonalHub: Backend Server</h3>
+        <p>This project is the fundamental server-side pillar for a **full-stack** application. PersonalHub was designed as a robust, scalable, and, above all, secure backend, with the goal of providing a complete **RESTful API** that efficiently manages all business logic and data persistence. It serves as the heart of a platform where user management and information security are the top priority.</p>
+        <p>The server architecture is based on a modern and widely adopted technology stack. It uses **Node.js** as the runtime environment and **Express.js** as the main framework for creating routes and middleware. This combination allows for agile, high-performance, and asynchronous development, ideal for handling multiple requests concurrently.</p>
+        <p>For data management, **MongoDB** was chosen, a flexible and document-oriented **NoSQL** database, perfect for dynamic data models. Interaction with this database is done through **Mongoose**, a powerful Object Data Modeling (**ODM**) library that simplifies **CRUD** operations and ensures data consistency through schemas.</p>
+        <p>Security is key. PersonalHub implements an authentication system based on **JSON Web Tokens (JWT)**. These digitally signed tokens allow for secure, stateless communication between client and server, protecting private routes from unauthorized access. Additionally, passwords are not stored in plain text; instead, the **jBcrypt** hash algorithm is used to encrypt them, ensuring that in case of a breach, credentials cannot be recovered.</p>
+        <p>PersonalHub is a robust and secure backend server for full-stack applications, designed with an architecture that facilitates future expansions. It provides all the necessary functionality and is ready to be integrated.</p>
+    `,
+    images: ["Media/Proyectos/Proyecto22/imagenPrincipal.jpeg"],
+    skills: [
+        "MongoDB",
+        "Programming",
+        "Maven",
+        "JSON",
+        "JavaScript",
+        "JSON Web Token (JWT)",
+        "Systems and Server Administration",
+        "Analytical and Algorithmic",
+        "Project Management and Documentation",
+        "Agile Methodologies",
+        "Node.js",
+        "Project Planning",
+        "jbcrypt",
+        "Analytical and Research Skills"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/backend-auth",
+        linkedin: "https://lnkd.in/p/dM7-zKZS"
+    }
+  },
+  "23_en": {
+    title: "Final Degree Project for Higher-Level DAM FPGS IFC302 TFG",
+    content: `
+        <h3>CofradeDome</h3>
+        <p>The "CofradeDome" application arises fictitiously in response to a request from a brotherhood that needs a digital solution to optimize the management of its instrument section attendees. Its main objective is to improve the attendance registration and control process through the use of QR Codes at rehearsals.</p>
+        <p>The application is designed for Android devices, allowing brotherhood leaders to easily manage rehearsal attendance and handle the permissions of certain members within the application.</p>
+        
+        <h4>Technologies / Tools Used</h4>
+        
+        <h5>Programming Languages:</h5>
+        <ul>
+            <li>**Application:** Kotlin</li>
+            <li>**Server:** Python</li>
+        </ul>
+        
+        <h5>IDE:</h5>
+        <ul>
+            <li>Android Studio 2024.2.2</li>
+            <li>Runtime version: 21.0.4</li>
+            <li>PlantUML integration (7.11.2)</li>
+        </ul>
+        
+        <h5>Libraries:</h5>
+        <ul>
+            <li>**Login (Password Encryption):** jbcrypt from org.mindrot</li>
+            <li>**Login (Biometric Technologies):** biometric from androidx.biometric</li>
+            <li>**Login (Encrypt/Decrypt internal application email file):** android.security.keystore.*, android.security.keystore.KeyProperties.*, javax.crypto.* and java.security.*, android.util.Base64</li>
+            <li>**SSL Client:** javax.net.ssl.*, java.security.*</li>
+            <li>**MiExecutorTask:** java.util.concurrent.Executor, java.util.concurrent.Executors</li>
+            <li>**List Attendance (QR Reader):** zxing-android-embedded from com.journeyapps</li>
+            <li>**GestorCofrades (QR Generator):** core from com.google.zxing</li>
+            <li>**GestorCofrades (PDF Card Generator):** itext-core from com.itextpdf, layout from com.itextpdf</li>
+        </ul>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto23/imagenPrincipal.png"
+    ],
+    skills: [
+        "User Experience (UX) and User Interface (UI) Design",
+        "Executor",
+        "Problem Solving",
+        "Python",
+        "Software Development",
+        "MySQL",
+        "Programming",
+        "Maven",
+        "SSL Certificates",
+        "Ubuntu",
+        "Android",
+        "biometric",
+        "Leadership",
+        "Systems and Server Administration",
+        "zxing",
+        "Analytical and Algorithmic",
+        "Project Management and Documentation",
+        "Transport Layer Security (TLS)",
+        "Agile Methodologies",
+        "Kotlin",
+        "Model-View-Controller (MVC)",
+        "Project Planning",
+        "jbcrypt",
+        "Database Design and Administration",
+        "Analytical and Research Skills"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/AppCofradeDome",
+        linkedin: "https://lnkd.in/p/dHTFAcfE"
+    }
+  },
+  "24_en": {
+    title: "Software Project Desktop WPF Text Editor",
+    content: `
+        <h3>Project: WPF Text Editor</h3>
+        <p>I developed a complete desktop application for a text editor using **C#** and the **WPF** (Windows Presentation Foundation) framework. This project focused on creating a modern and adaptable user interface, leveraging the potential of WPF for the separation of business logic and the interface.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li>**Advanced UI Design:** Creation of a highly customizable user interface with **XAML**, which allows for a flexible and scalable design.</li>
+            <li>**File Management:** Implementation of intuitive menus to create, open, save, and save as text files.</li>
+            <li>**Text Editor:** A complete workspace with text editing functionalities.</li>
+            <li>**Data Binding:** Use of the **data binding** concept to dynamically connect the UI to data and business logic.</li>
+        </ul>
+        
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>**Language:** C#</li>
+            <li>**Framework:** WPF (.NET 9.0.0)</li>
+            <li>**IDE:** Visual Studio</li>
+            <li>**UI Technologies:** XAML, Data Binding</li>
+            <li>**Design Patterns:** MVVM (Model-View-ViewModel)</li>
+        </ul>
+        <p>This project allowed me to consolidate my knowledge in application development with **WPF**, applying design patterns to achieve a cleaner and more maintainable code architecture. It demonstrates my ability to work with cutting-edge technologies to create rich and functional user experiences.</p>
+    `,
+    images: [
+              "Media/Proyectos/Proyecto24/imagenPrincipal.jpg",
+              "Media/Proyectos/Proyecto24/imagenPrincipal.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_date.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Archivo.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Ayuda.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Ayuda_Ventana.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formato_ColorFondo.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formato_ColorTexto.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Menu_Formulario.jpg",
+              "Media/Proyectos/Proyecto24/Pantalla_Principal_Modificada.jpg"
+    ],
+    skills: [
+        "C#",
+        ".NET Framework"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WPF_Menus_Archivos_Custom_EditorTexto",
+        linkedin: "https://lnkd.in/p/dAihRfHX"
+    }
+  },
+  "25_en": {
+    title: "Desktop App Project WF SystemProjects",
+    content: "<h3>Project: WF_SystemProjects</h3><p>I led the analysis, development, and documentation of ProyectosDome, a desktop application for the Windows OS designed to optimize the management of projects, tasks, and clients. This solution was conceived for a company to improve its operational efficiency and ensure data integrity.</p><h4>Project Objectives:</h4><ul><li><b>Data Persistence and Management:</b> Design and implementation of a robust system for data management and persistence, ensuring referential integrity and information reliability.</li><li><b>Data Validation:</b> Development of validation logic to ensure that data inserted into the database meets defined business criteria.</li><li><b>Interface Design:</b> Creation of an intuitive user interface in C# with Windows Forms, facilitating user interaction with the application.</li><li><b>Documentation Generation:</b> Elaboration of a complete technical report, detailing the application's architecture, data flow, and design decisions.</li></ul><h4>Technologies and Methodologies:</h4><ul><li><b>Programming Language:</b> C#</li><li><b>Framework:</b> .NET, Windows Forms</li><li><b>IDE:</b> Visual Studio</li><li><b>Database:</b> SQL Server</li><li><b>Data Management:</b> Modeling, insertion, and retrieval of data for database persistence.</li><li><b>Software Engineering:</b> Requirements analysis, solution design, and development.</li></ul><p>This project allowed me to apply my knowledge in full-cycle software development, from the analysis and architecture of the solution to the final implementation and documentation, with a focus on code quality and system efficiency.</p>",
+    images: ["Media/Proyectos/Proyecto25/imagenPrincipal.jpg"],
+    skills: [
+        "C#",
+        ".NET Framework",
+        "SQL"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WF_SistemaProyectos",
+        linkedin: "https://lnkd.in/p/dcfiPhn9"
+    }
+  },
+  "26_en": {
+    title: "WF Text Editor Software App Project",
+    content: `
+        <h3>Project: WF Text Editor</h3>
+        <p>I developed a complete desktop application in **C#** using the **Windows Forms** framework and **.NET 9.0.0**. This project is a functional text editor that demonstrates my skills in desktop software development and the application's lifecycle management.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li>**File Management:** Implementation of intuitive menus to create, open, save, and save as text files.</li>
+            <li>**Editor:** A complete workspace for text editing.</li>
+            <li>**Dynamic Information:** Integration of a real-time clock and the visualization of cursor coordinates (line and column) on the user interface.</li>
+        </ul>
+        
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>**Language:** C#</li>
+            <li>**Framework:** Windows Forms</li>
+            <li>**Platform:** .NET 9.0.0</li>
+            <li>**Tools:** Visual Studio</li>
+        </ul>
+        
+        <p>This project allowed me to consolidate my knowledge in **object-oriented programming (OOP)**, event handling, and file system management, applying good development practices.</p>
+    `,
+    images: [],
+    skills: [
+        ".NET Framework",
+        "Microsoft Visual Studio Code",
+        "C#"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/WF_Menus_Archivos_Custom_EditorTexto",
+        linkedin: "https://lnkd.in/p/digKzB6G"
+    }
+  },
+  "27_en": {
+    title: "Library App – Personal Book Management on Android",
+    content: `
+        <h3>Library App - Personal Book Management on Android</h3>
+        <p>Library App is an Android application developed in **Java 15** that allows users to manage and organize their personal library in a simple and intuitive way. With it, you can register books, note your readings, make ratings, save notes, and keep track of loans.</p>
+        <p>Its modular design and the integration of modern Android libraries ensure a fluid and adaptable experience. Additionally, it features **unit tests** implemented with **JUnit** and **Mockito**, which ensures the reliability and proper functioning of the main features.</p>
+
+        <h4>Main Features:</h4>
+        <ul>
+            <li>Book registration with title, author, genre, language, and format.</li>
+            <li>Reading management: start and end dates.</li>
+            <li>Personal rating and notes for each book.</li>
+            <li>Loan tracking to other people.</li>
+        </ul>
+
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>**Language:** Java 15</li>
+            <li>**AndroidX Framework** and **Material Design** for the interface.</li>
+            <li>**Gradle** (AGP 8.6.0) for project management.</li>
+            <li>**JUnit**, **Espresso**, and **Mockito** for testing.</li>
+        </ul>
+
+        <p>This project reflects my skills in Android development, clean code organization, and software testing. It also demonstrates my ability to take an application from initial design to a functional, scalable, and easy-to-maintain final product.</p>
+    `,
+    images: [
+            "Media/Proyectos/Proyecto27/imagenPrincipal.jpeg",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal.png",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal_Menu.png",
+            "Media/Proyectos/Proyecto27/Pantalla_Principal_Opciones.png",
+            "Media/Proyectos/Proyecto27/Dialogo_ModificarLibro.png",
+            "Media/Proyectos/Proyecto27/Opcion_OrdenarPor.png",
+            "Media/Proyectos/Proyecto27/OpcionEliminar.png",
+            "Media/Proyectos/Proyecto27/Pantalla_DarAltaLibro.png" 
+    ],
+    skills: [
+        "Android",
+        "Java",
+        "JUnit",
+        "Mockito",
+        "Gradle",
+        "Material Design",
+        "AndroidX",
+        "Espresso",
+        "Software Testing",
+        "Software Development"
+    ],
+    links: {
+        github: "https://github.com/jherraizsoler/appbiblioteca",
+        linkedin: "https://lnkd.in/p/diywaF5j"
+    }
+  },
+  "28_en": {
+    title: "Complete Documentation of a Fictional Company's Network and Simulation with Cisco Packet Tracer",
+    content: `
+        <h3>Network Documentation and Simulation with Cisco Packet Tracer</h3>
+        <p>This project consisted of the complete documentation, analysis, study, decision-making, and development of a fictional case of a client's problem ticket. The situation was analyzed, design decisions were made, and a fictional company's network was developed and simulated with **Cisco Packet Tracer**. The complete project, with all the technical information, is detailed in an attached PDF document.</p>
+    `,
+    images: [
+            "Media/Proyectos/Proyecto28/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto28/imagenPrincipal.jpg",
+            "Media/Proyectos/Proyecto28/2.jpg",
+            "Media/Proyectos/Proyecto28/3.jpg",
+            "Media/Proyectos/Proyecto28/4.jpg",
+            "Media/Proyectos/Proyecto28/5.jpg",
+            "Media/Proyectos/Proyecto28/6.jpg",
+            "Media/Proyectos/Proyecto28/7.jpg",
+            "Media/Proyectos/Proyecto28/8.jpg",
+            "Media/Proyectos/Proyecto28/9.jpg",
+            "Media/Proyectos/Proyecto28/10.jpg",
+            "Media/Proyectos/Proyecto28/11.jpg",
+            "Media/Proyectos/Proyecto28/12.jpg",
+            "Media/Proyectos/Proyecto28/13.jpg",
+            "Media/Proyectos/Proyecto28/14.jpg",
+            "Media/Proyectos/Proyecto28/15.jpg",
+            "Media/Proyectos/Proyecto28/16.jpg",
+            "Media/Proyectos/Proyecto28/17.jpg",
+            "Media/Proyectos/Proyecto28/18.jpg",
+            "Media/Proyectos/Proyecto28/19.jpg"  
+    ],
+    skills: [
+        "Problem Solving",
+        "Incident Management and Resolution",
+        "Programming",
+        "Document Management",
+        "Maven",
+        "Leadership",
+        "Systems and Server Administration",
+        "Network Management",
+        "Analytical and Algorithmic",
+        "Project Management and Documentation",
+        "Agile Methodologies",
+        "Project Planning",
+        "Analytical and Research Skills"
+    ],
+    links: {
+        linkedin: "https://lnkd.in/p/d_p9d42i"
+    }
+}
+
+
+
+
  };
 
 
