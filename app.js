@@ -62,7 +62,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto2/Pantalla_EliminarPersona.jpg",
       "Media/Proyectos/Proyecto2/Pantalla_ListadoPersonas.jpg",
       "Media/Proyectos/Proyecto2/Pantalla_Login_Usuario_es_admin o user_Contraseña_es_123_.jpg",
-      "Media/Proyectos/Proyecto2/Pantalla_Principal_User_.jpg"
+      "Media/Proyectos/Proyecto2/Pantalla_Principal_User_.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -108,7 +108,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto3/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto3/Pantalla_AgregarContactol.jpg",
       "Media/Proyectos/Proyecto3/Pantalla_EditarContacto.jpg",
-      "Media/Proyectos/Proyecto3/Pantalla_principal.jpg"
+      "Media/Proyectos/Proyecto3/Pantalla_principal.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -153,7 +153,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto4/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto4/Pantalla_agregarEmpleado.jpg",
       "Media/Proyectos/Proyecto4/Pantalla_editarEmpleado.jpg",
-      "Media/Proyectos/Proyecto4/Pantalla_principal.jpg"
+      "Media/Proyectos/Proyecto4/Pantalla_principal.jpg",
     ],
     skills: [
       "JSTL",
@@ -198,7 +198,7 @@ const projectsData = {
     `,
     images: [
       "Media/Proyectos/Proyecto5/imagenPrincipal.jpeg",
-      "Media/Proyectos/Proyecto5/Ventana_principal.jpg"
+      "Media/Proyectos/Proyecto5/Ventana_principal.jpg",
     ], // Agrega las rutas a tus imágenes si las tienes, por ejemplo: ['Media/proyectos/Proyecto5/imagenPrincipal.jpeg']
     skills: [
       "Angular",
@@ -252,7 +252,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto6/Pantalla_AgregarPersona.jpg",
       "Media/Proyectos/Proyecto6/Pantalla_ListadoPersonas.jpg",
       "Media/Proyectos/Proyecto6/Pantalla_principal.jpg",
-      "Media/Proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg"
+      "Media/Proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -304,7 +304,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto7/MenuPrincipal_Salir_Console.jpg",
       "Media/Proyectos/Proyecto7/PantallaPrincipal_DatosGuardados_Swing_GUI_DESKTOP.jpg",
       "Media/Proyectos/Proyecto7/PantallaPrincipal_DatosSeleccionados_Swing_GUI_DESKTOP.jpg",
-      "Media/Proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg"
+      "Media/Proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -340,7 +340,7 @@ const projectsData = {
     `,
     images: [
       "Media/Proyectos/Proyecto8/imagenPrincipal.jpeg",
-      "Media/Proyectos/Proyecto8/Postmanjpg.jpg"
+      "Media/Proyectos/Proyecto8/Postmanjpg.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -379,7 +379,7 @@ const projectsData = {
         <h4>Arquitectura y Tecnologías</h4>
         <p>El corazón de este proyecto se centra en las operaciones de gestión de productos, facilitando las funciones **CRUD** (Crear, Leer, Actualizar y Borrar). La arquitectura del sistema está diseñada para ser modular y extensible, lo que permite una fácil integración con otras plataformas, como sistemas de punto de venta (POS) o tiendas de comercio electrónico.</p>
     `,
-    images: ["Media/Proyectos/Proyecto9/imagenPrincipal.jpeg"], // Agrega las rutas a tus imágenes si las tienes
+    images: [ "Media/Proyectos/Proyecto9/imagenPrincipal.jpeg" ], // Agrega las rutas a tus imágenes si las tienes
     skills: [
       "Spring Framework",
       "MySQL",
@@ -419,7 +419,7 @@ const projectsData = {
         </ul>
         <p>Esta estructura de API desacopla el backend del frontend, permitiendo que aplicaciones de cliente como las construidas con React o Angular se conecten y gestionen los datos de manera fluida y eficiente.</p>
     `,
-    images: ["Media/Proyectos/Proyecto10/imagenPrincipal.jpeg"],
+    images: [ "Media/Proyectos/Proyecto10/imagenPrincipal.jpeg" ],
     skills: [
       "Spring Framework",
       "MySQL",
@@ -455,7 +455,7 @@ const projectsData = {
     images: [
       "Media/Proyectos/Proyecto11/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto11/pantalla_principal.jpg",
-      "Media/Proyectos/Proyecto11/pantalla_principal_seleccion_a_una_persona.jpg"
+      "Media/Proyectos/Proyecto11/pantalla_principal_seleccion_a_una_persona.jpg",
     ],
     skills: [
       "Angular",
@@ -497,7 +497,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto12/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto12/Pantalla_principal.jpg",
       "Media/Proyectos/Proyecto12/Pantalla_AgregarProducto.jpg",
-      "Media/Proyectos/Proyecto12/Pantalla_EditarProducto.jpg"
+      "Media/Proyectos/Proyecto12/Pantalla_EditarProducto.jpg",
     ],
     skills: [
       "Angular",
@@ -542,7 +542,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto13/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto13/pantalla_principal.jpg",
       "Media/Proyectos/Proyecto13/pantalla_AgregarEmpleado.jpg",
-      "Media/Proyectos/Proyecto13/pantalla_EditarEmpleado.jpg"
+      "Media/Proyectos/Proyecto13/pantalla_EditarEmpleado.jpg",
     ],
     skills: [
       "Programación",
@@ -579,7 +579,7 @@ const projectsData = {
 
         <p>Este backend es la columna vertebral digital de Zafra, permitiendo una gestión interna unificada y eficiente, y proporcionando la infraestructura necesaria para su crecimiento.</p>
     `,
-    images: ["Media/Proyectos/Proyecto14/imagenPrincipal.jpeg"],
+    images: [ "Media/Proyectos/Proyecto14/imagenPrincipal.jpeg" ],
     skills: [
       "C#",
       "Diseño de experiencia de usuario (UX) y interfaz de usuario (UI)",
@@ -641,7 +641,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto15/9.png",
       "Media/Proyectos/Proyecto15/10.png",
       "Media/Proyectos/Proyecto15/11.png",
-      "Media/Proyectos/Proyecto15/12.png"
+      "Media/Proyectos/Proyecto15/12.png",
     ],
     skills: [
       "Programación",
@@ -664,6 +664,46 @@ const projectsData = {
         "https://www.linkedin.com/posts/jorge-herraiz-soler-25679725b_nuevoproyecto-activity-7360397052524003328-unj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEACjaIB6DsKY_IcuDUqisiL9oD5WELnCHk",
     },
   },
+  "16_es": {
+    title: "ShopFlow - Gestión Integral de Tiendas",
+    content: `
+        <h3>Descripción del Proyecto</h3>
+        <p>Este proyecto es una aplicación **Full-Stack** completa diseñada para la gestión integral de tiendas. Proporciona una solución robusta y escalable para administrar productos, ventas, inventario y empleados, con una interfaz de usuario intuitiva y optimizada para la productividad.</p>
+        
+        <h4>Backend: El Núcleo del Sistema</h4>
+        <p>El backend se basa en un framework moderno y eficiente que asegura una arquitectura sólida y modular. Se utiliza una **API RESTful** para la comunicación fluida con el frontend, permitiendo la separación de responsabilidades y un desarrollo independiente de cada capa.</p>
+        
+        <h4>Frontend: Experiencia de Usuario Moderna</h4>
+        <p>El frontend se desarrolla con tecnologías que permiten crear una experiencia de usuario (UX/UI) moderna y responsiva. La interfaz está diseñada para ser intuitiva, facilitando la navegación y el acceso a todas las funcionalidades del sistema.</p>
+        
+        <h4>Integración y Funcionalidad Completa</h4>
+        <p>ShopFlow es un sistema **Full-Stack** que integra todas las funcionalidades necesarias para la gestión de una tienda, desde el registro de ventas hasta el control de inventario y la administración de empleados, garantizando que el frontend y el backend trabajen en armonía.</p>
+    `,
+    images: [
+      "Media/Proyectos/Proyecto16/imagenPrincipal.jpeg",
+      "Media/Proyectos/Proyecto16/VentanaPrincipal.jpg",
+      "Media/Proyectos/Proyecto16/VentanaPrincipal_graficos.jpg",
+      "Media/Proyectos/Proyecto16/Ventana_AgregarTienda.jpg",
+      "Media/Proyectos/Proyecto16/Ventana_EditarTienda.jpg"
+    ],
+    skills: [
+      "Angular",
+      "Programación",
+      "Administración de sistemas y servidores",
+      "Microsoft Visual Studio Code",
+      "Analítico y algorítmico",
+      "Gestión y documentación de proyectos",
+      "Metodologías ágiles",
+      "Angular CLI",
+      "API de Postman",
+      "Planificación de proyectos",
+      "Capacidad de análisis e investigación",
+    ],
+    links: {
+      github: "https://github.com/jherraizsoler/ShopFlow_ControlTiendas",
+      linkedin: "https://lnkd.in/p/dxk_Axrc",
+    },
+  },
 
   // Ingles
   "1_en": {
@@ -683,7 +723,7 @@ const projectsData = {
     `,
     images: [
       "Media/Proyectos/Proyecto1/imagenPrincipal.jpeg",
-      "Media/Proyectos/Proyecto1/ventanaPrincipal_1.jpeg"
+      "Media/Proyectos/Proyecto1/ventanaPrincipal_1.jpeg",
     ],
     skills: [
       "JavaFX",
@@ -728,7 +768,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto2/Pantalla_EliminarPersona.jpg",
       "Media/Proyectos/Proyecto2/Pantalla_ListadoPersonas.jpg",
       "Media/Proyectos/Proyecto2/Pantalla_Login_Usuario_es_admin o user_Contraseña_es_123_.jpg",
-      "Media/Proyectos/Proyecto2/Pantalla_Principal_User_.jpg"
+      "Media/Proyectos/Proyecto2/Pantalla_Principal_User_.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -774,7 +814,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto3/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto3/Pantalla_AgregarContactol.jpg",
       "Media/Proyectos/Proyecto3/Pantalla_EditarContacto.jpg",
-      "Media/Proyectos/Proyecto3/Pantalla_principal.jpg"
+      "Media/Proyectos/Proyecto3/Pantalla_principal.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -819,9 +859,9 @@ const projectsData = {
       "Media/Proyectos/Proyecto4/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto4/Pantalla_agregarEmpleado.jpg",
       "Media/Proyectos/Proyecto4/Pantalla_editarEmpleado.jpg",
-      "Media/Proyectos/Proyecto4/Pantalla_principal.jpg"
+      "Media/Proyectos/Proyecto4/Pantalla_principal.jpg",
     ],
-    
+
     skills: [
       "JSTL",
       "Tomcat",
@@ -865,7 +905,7 @@ const projectsData = {
         `,
     images: [
       "Media/Proyectos/Proyecto5/imagenPrincipal.jpeg",
-      "Media/Proyectos/Proyecto5/Ventana_principal.jpg"
+      "Media/Proyectos/Proyecto5/Ventana_principal.jpg",
     ], // Agrega las rutas a tus imágenes si las tienes, por ejemplo: ['Media/proyectos/Proyecto5/imagenPrincipal.jpeg']
     skills: [
       "Angular",
@@ -919,7 +959,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto6/Pantalla_AgregarPersona.jpg",
       "Media/Proyectos/Proyecto6/Pantalla_ListadoPersonas.jpg",
       "Media/Proyectos/Proyecto6/Pantalla_principal.jpg",
-      "Media/Proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg"
+      "Media/Proyectos/Proyecto6/Pantalla_SeleccionPersona_EditarPersona.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -971,7 +1011,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto7/MenuPrincipal_Salir_Console.jpg",
       "Media/Proyectos/Proyecto7/PantallaPrincipal_DatosGuardados_Swing_GUI_DESKTOP.jpg",
       "Media/Proyectos/Proyecto7/PantallaPrincipal_DatosSeleccionados_Swing_GUI_DESKTOP.jpg",
-      "Media/Proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg"
+      "Media/Proyectos/Proyecto7/PantallaPrincipal_Swing_GUI_DESKTOP.jpg",
     ],
     skills: [
       "Spring Framework",
@@ -1007,7 +1047,7 @@ const projectsData = {
         `,
     images: [
       "Media/Proyectos/Proyecto8/imagenPrincipal.jpeg",
-      "Media/Proyectos/Proyecto8/Postmanjpg.jpg"
+      "Media/Proyectos/Proyecto8/Postmanjpg.jpg",
     ],
     skills: [
       "Jakarta EE",
@@ -1046,7 +1086,7 @@ const projectsData = {
         <h4>Architecture and Technologies</h4>
         <p>The core of this project focuses on product management operations, facilitating **CRUD** (Create, Read, Update, and Delete) functions. The system's architecture is designed to be modular and extensible, allowing for easy integration with other platforms, such as point of sale (POS) systems or e-commerce stores.</p>
         `,
-    images: ["Media/Proyectos/Proyecto9/imagenPrincipal.jpeg"], // Agrega las rutas a tus imágenes si las tienes
+    images: [ "Media/Proyectos/Proyecto9/imagenPrincipal.jpeg" ], // Agrega las rutas a tus imágenes si las tienes
     skills: [
       "Spring Framework",
       "MySQL",
@@ -1086,7 +1126,7 @@ const projectsData = {
         </ul>
         <p>This API structure decouples the backend from the frontend, allowing client applications like those built with React or Angular to connect and manage data in a fluid and efficient manner.</p>
         `,
-    images: ["Media/Proyectos/Proyecto10/imagenPrincipal.jpeg"],
+    images: [ "Media/Proyectos/Proyecto10/imagenPrincipal.jpeg" ],
     skills: [
       "Spring Framework",
       "MySQL",
@@ -1122,7 +1162,7 @@ const projectsData = {
     images: [
       "Media/Proyectos/Proyecto11/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto11/pantalla_principal.jpg",
-      "Media/Proyectos/Proyecto11/pantalla_principal_seleccion_a_una_persona.jpg"
+      "Media/Proyectos/Proyecto11/pantalla_principal_seleccion_a_una_persona.jpg",
     ],
     skills: [
       "Angular",
@@ -1164,7 +1204,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto12/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto12/Pantalla_principal.jpg",
       "Media/Proyectos/Proyecto12/Pantalla_AgregarProducto.jpg",
-      "Media/Proyectos/Proyecto12/Pantalla_EditarProducto.jpg"
+      "Media/Proyectos/Proyecto12/Pantalla_EditarProducto.jpg",
     ],
     skills: [
       "Angular",
@@ -1209,7 +1249,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto13/imagenPrincipal.jpeg",
       "Media/Proyectos/Proyecto13/pantalla_principal.jpg",
       "Media/Proyectos/Proyecto13/pantalla_AgregarEmpleado.jpg",
-      "Media/Proyectos/Proyecto13/pantalla_EditarEmpleado.jpg"
+      "Media/Proyectos/Proyecto13/pantalla_EditarEmpleado.jpg",
     ],
     skills: [
       "Programación",
@@ -1246,7 +1286,7 @@ const projectsData = {
 
         <p>This backend is the digital backbone of Zafra, enabling unified and efficient internal management and providing the necessary infrastructure for its growth.</p>
         `,
-    images: ["Media/Proyectos/Proyecto14/imagenPrincipal.jpeg"],
+    images: [ "Media/Proyectos/Proyecto14/imagenPrincipal.jpeg" ],
     skills: [
       "C#",
       "Diseño de experiencia de usuario (UX) y interfaz de usuario (UI)",
@@ -1309,7 +1349,7 @@ const projectsData = {
       "Media/Proyectos/Proyecto15/9.png",
       "Media/Proyectos/Proyecto15/10.png",
       "Media/Proyectos/Proyecto15/11.png",
-      "Media/Proyectos/Proyecto15/12.png"
+      "Media/Proyectos/Proyecto15/12.png",
     ],
     skills: [
       "Programación",
@@ -1332,6 +1372,47 @@ const projectsData = {
         "https://www.linkedin.com/posts/jorge-herraiz-soler-25679725b_nuevoproyecto-activity-7360397052524003328-unj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEACjaIB6DsKY_IcuDUqisiL9oD5WELnCHk",
     },
   },
+  "16_en": {
+    title:
+      "FullStack Web App Project ShopFlow - Comprehensive Store Management",
+    content: `
+              <h3>Project Description</h3>
+              <p>This project is a complete **Full-Stack** application designed for comprehensive store management. It provides a robust and scalable solution to manage products, sales, inventory, and employees, with an intuitive user interface optimized for productivity.</p>
+
+              <h4>Backend: The System's Core</h4>
+              <p>The backend is built on a modern and efficient framework that ensures a solid and modular architecture. A **RESTful API** is used for fluid communication with the frontend, allowing for the separation of responsibilities and independent development of each layer.</p>
+
+              <h4>Frontend: Modern User Experience</h4>
+              <p>The frontend is developed with technologies that allow for the creation of a modern and responsive user experience (UX/UI). The interface is designed to be intuitive, facilitating navigation and access to all the system's functionalities.</p>
+
+              <h4>Integration and Complete Functionality</h4>
+              <p>ShopFlow is a true **Full-Stack** system that integrates all the necessary functionalities for store management, from sales registration to inventory control and employee administration, ensuring that the frontend and backend work in harmony.</p>
+             `,
+    images: [
+      "Media/Proyectos/Proyecto16/imagenPrincipal.jpeg",
+      "Media/Proyectos/Proyecto16/imagen0.jpeg",
+      "Media/Proyectos/Proyecto16/imagen1.jpeg",
+      "Media/Proyectos/Proyecto16/imagen2.jpeg",
+      "Media/Proyectos/Proyecto16/imagen3.jpeg",
+    ],
+    skills: [
+      "Angular",
+      "Programación",
+      "Administración de sistemas y servidores",
+      "Microsoft Visual Studio Code",
+      "Analítico y algorítmico",
+      "Gestión y documentación de proyectos",
+      "Metodologías ágiles",
+      "Angular CLI",
+      "API de Postman",
+      "Planificación de proyectos",
+      "Capacidad de análisis e investigación",
+    ],
+    links: {
+      github: "https://github.com/jherraizsoler/ShopFlow_ControlTiendas",
+      linkedin: "https://lnkd.in/p/dxk_Axrc",
+    },
+  },
 };
 
 // 2. Referencias a los elementos del DOM (se agrega el visor de imágenes)
@@ -1340,29 +1421,36 @@ const modalContainer = document.getElementById("modal-container");
 const modalContent = modalContainer.querySelector(".modal");
 
 // Visor de imágenes a pantalla completa
-const fullscreenImageViewer = document.getElementById('fullscreen-image-viewer');
-const fullscreenImage = document.getElementById('fullscreen-image');
+const fullscreenImageViewer = document.getElementById(
+  "fullscreen-image-viewer"
+);
+const fullscreenImage = document.getElementById("fullscreen-image");
 let isZoomed = false;
 let isDragging = false;
 let startX, startY, currentX, currentY;
-let imageX = 0, imageY = 0;
+let imageX = 0,
+  imageY = 0;
 
 // 3. Manejador de eventos para abrir el modal
-articlesContainer.addEventListener("click", (event) => {
+articlesContainer.addEventListener("click", (event) =>
+{
   const projectCard = event.target.closest(".project-card");
 
-  if (projectCard) {
+  if (projectCard)
+  {
     const projectId = projectCard.getAttribute("data-project-id");
-    const projectData = projectsData[projectId];
+    const projectData = projectsData[ projectId ];
 
-    if (projectData) {
+    if (projectData)
+    {
       let contentHTML = "";
 
       // Lógica para la imagen principal y las adjuntas
-      if (projectData.images && projectData.images.length > 0) {
+      if (projectData.images && projectData.images.length > 0)
+      {
         contentHTML += `
           <div class="modal-image-top">
-            <img src="${projectData.images[0]}" alt="${projectData.title}" class="modal-project-image">
+            <img src="${projectData.images[ 0 ]}" alt="${projectData.title}" class="modal-project-image">
           </div>`;
       }
 
@@ -1370,42 +1458,55 @@ articlesContainer.addEventListener("click", (event) => {
       contentHTML += `<div class="modal-body">${projectData.content}</div>`;
 
       // Añade los "chips" de aptitudes si existen
-      if (projectData.skills && projectData.skills.length > 0) {
+      if (projectData.skills && projectData.skills.length > 0)
+      {
         const lang = projectId.includes("_en") ? "en" : "es";
 
-        if (lang === "es") {
+        if (lang === "es")
+        {
           contentHTML += `<h4>Aptitudes Clave</h4>`;
-        } else {
+        } else
+        {
           contentHTML += `<h4>Key Skills</h4>`;
         }
 
         contentHTML += `<div class="project-skills">`;
-        projectData.skills.forEach((skill) => {
+        projectData.skills.forEach((skill) =>
+        {
           contentHTML += `<span class="skill-chip">${skill}</span>`;
         });
         contentHTML += `</div>`;
       }
 
       // Añade imágenes adjuntas si hay más de una
-      if (projectData.images && projectData.images.length > 1) {
+      if (projectData.images && projectData.images.length > 1)
+      {
         contentHTML += `<div class="project-images">`;
-        for (let i = 1; i < projectData.images.length; i++) {
-          contentHTML += `<img src="${projectData.images[i]}" alt="${projectData.title}" class="modal-project-image">`;
+        for (let i = 1; i < projectData.images.length; i++)
+        {
+          contentHTML += `<img src="${projectData.images[ i ]}" alt="${projectData.title}" class="modal-project-image">`;
         }
         contentHTML += `</div>`;
       }
 
       // Añade los enlaces si existen
-      if (projectData.links) {
+      if (projectData.links)
+      {
         const lang = projectId.includes("_en") ? "en" : "es";
         contentHTML += `<div class="project-links">`;
 
-        if (projectData.links.github) {
-          contentHTML += `<a href="${projectData.links.github}" target="_blank" class="link-button">${lang === "es" ? "Ver en GitHub" : "View on GitHub"}</a>`;
+        if (projectData.links.github)
+        {
+          contentHTML += `<a href="${projectData.links.github
+            }" target="_blank" class="link-button">${lang === "es" ? "Ver en GitHub" : "View on GitHub"
+            }</a>`;
         }
 
-        if (projectData.links.linkedin) {
-          contentHTML += `<a href="${projectData.links.linkedin}" target="_blank" class="link-button">${lang === "es" ? "Ver en LinkedIn" : "View on LinkedIn"}</a>`;
+        if (projectData.links.linkedin)
+        {
+          contentHTML += `<a href="${projectData.links.linkedin
+            }" target="_blank" class="link-button">${lang === "es" ? "Ver en LinkedIn" : "View on LinkedIn"
+            }</a>`;
         }
 
         contentHTML += `</div>`;
@@ -1419,35 +1520,43 @@ articlesContainer.addEventListener("click", (event) => {
 });
 
 // 4. Manejador de eventos para cerrar el modal
-modalContainer.addEventListener("click", (event) => {
+modalContainer.addEventListener("click", (event) =>
+{
   if (
     event.target.id === "close-modal" ||
     event.target.id === "modal-container"
-  ) {
+  )
+  {
     modalContainer.classList.remove("show");
   }
 });
 // Lógica para el visor de imágenes (Sección modificada)
 // =======================================================
 // **DELEGACIÓN DE EVENTOS**: Escucha en el contenedor del modal
-modalContainer.addEventListener('click', (event) => {
-  if (event.target.classList.contains('modal-project-image')) {
+modalContainer.addEventListener("click", (event) =>
+{
+  if (event.target.classList.contains("modal-project-image"))
+  {
     openFullscreenImageViewer(event.target.src);
   }
 });
 
 // Evento para cerrar el visor al hacer clic en el fondo
-fullscreenImageViewer.addEventListener('click', (event) => {
-  if (event.target === fullscreenImageViewer) {
+fullscreenImageViewer.addEventListener("click", (event) =>
+{
+  if (event.target === fullscreenImageViewer)
+  {
     closeFullscreenImageViewer();
   }
 });
 
 // Evento para hacer zoom/des-zoom al hacer clic en la imagen ampliada
-fullscreenImage.addEventListener('click', () => {
+fullscreenImage.addEventListener("click", () =>
+{
   isZoomed = !isZoomed;
-  fullscreenImage.classList.toggle('zoomed', isZoomed);
-  if (!isZoomed) {
+  fullscreenImage.classList.toggle("zoomed", isZoomed);
+  if (!isZoomed)
+  {
     // Resetear posición al hacer des-zoom
     imageX = 0;
     imageY = 0;
@@ -1456,22 +1565,25 @@ fullscreenImage.addEventListener('click', () => {
 });
 
 // Nuevos eventos para el arrastre de la imagen (Pan)
-fullscreenImage.addEventListener('mousedown', (e) => {
-  if (isZoomed) {
+fullscreenImage.addEventListener("mousedown", (e) =>
+{
+  if (isZoomed)
+  {
     isDragging = true;
     startX = e.clientX;
     startY = e.clientY;
     e.preventDefault(); // Evita la selección de la imagen al arrastrar
-    fullscreenImage.style.cursor = 'grabbing';
+    fullscreenImage.style.cursor = "grabbing";
   }
 });
 
-fullscreenImage.addEventListener('mousemove', (e) => {
+fullscreenImage.addEventListener("mousemove", (e) =>
+{
   if (!isDragging) return;
-  
+
   currentX = e.clientX;
   currentY = e.clientY;
-  
+
   const deltaX = currentX - startX;
   const deltaY = currentY - startY;
 
@@ -1481,41 +1593,50 @@ fullscreenImage.addEventListener('mousemove', (e) => {
 
   // Aplica la transformación de escala y movimiento
   fullscreenImage.style.transform = `scale(1.5) translate(${imageX}px, ${imageY}px)`;
-  
+
   startX = currentX;
   startY = currentY;
 });
 
-fullscreenImage.addEventListener('mouseup', () => {
+fullscreenImage.addEventListener("mouseup", () =>
+{
   isDragging = false;
-  fullscreenImage.style.cursor = 'grab';
+  fullscreenImage.style.cursor = "grab";
 });
 
-fullscreenImageViewer.addEventListener('mouseleave', () => {
+fullscreenImageViewer.addEventListener("mouseleave", () =>
+{
   isDragging = false;
 });
 
 // Cerrar con la tecla Escape
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && fullscreenImageViewer.classList.contains('active')) {
+document.addEventListener("keydown", (event) =>
+{
+  if (
+    event.key === "Escape" &&
+    fullscreenImageViewer.classList.contains("active")
+  )
+  {
     closeFullscreenImageViewer();
   }
 });
 
 // Funciones del visor
-function openFullscreenImageViewer(imageSrc) {
+function openFullscreenImageViewer(imageSrc)
+{
   fullscreenImage.src = imageSrc;
-  fullscreenImageViewer.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  fullscreenImageViewer.classList.add("active");
+  document.body.style.overflow = "hidden";
   isZoomed = false;
-  fullscreenImage.classList.remove('zoomed');
+  fullscreenImage.classList.remove("zoomed");
   // Restablecer la posición de la imagen al abrir el visor
-  fullscreenImage.style.transform = 'scale(1) translate(0, 0)';
+  fullscreenImage.style.transform = "scale(1) translate(0, 0)";
   imageX = 0;
   imageY = 0;
 }
 
-function closeFullscreenImageViewer() {
-  fullscreenImageViewer.classList.remove('active');
-  document.body.style.overflow = '';
+function closeFullscreenImageViewer()
+{
+  fullscreenImageViewer.classList.remove("active");
+  document.body.style.overflow = "";
 }
